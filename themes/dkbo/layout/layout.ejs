@@ -15,6 +15,13 @@
   </div>
   <%- partial('_partial/footer') %>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <%- js('js/main') %>
+  <% if(is_home()) { %>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&language=zh-TW&libraries=places"></script>
+    <%- js('js/custom') %>
+    <%- js('js/main') %>
+  <% } %>
+  <% if(is_post()) { %>
+    <%- js('js/single') %>
+  <% } %>
 </body>
 </html>

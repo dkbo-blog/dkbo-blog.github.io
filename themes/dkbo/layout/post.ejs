@@ -22,7 +22,7 @@
             <%- partial('_partial/_function/breadcrumb_init') %>
         </div>
         <article class="col xx-12 x-p s-2p">
-            <h2 class="article-title"><%= page.title %></h2>
+            <h1 class="article-title"><%= page.title %></h1>
             <div class="article-meta">
                 <span><%= page.date.format(theme.dateformatindex) %></span><span> / </span>
                 <span><a href="<%- url_for(cPath(page))%>"><%- cName(page) %></a></span><span> / </span>

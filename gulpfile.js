@@ -58,7 +58,6 @@ gulp.task('server', function() {
 
 });
 
-// 部署到服务器
 gulp.task('deploy', function() {
 
 	hexo.init().then(function() {
