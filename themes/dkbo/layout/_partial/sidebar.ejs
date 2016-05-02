@@ -1,0 +1,19 @@
+<% if(!is_post()){ %>
+  <aside class="col m4 xx-ng">
+      <%- partial('_sidebar/tags') %>
+    <div class="clearfix"></div>
+    <div id="sidebarbox">
+    <div id="sidebar-2" class="xx-center" style="display: none;"></div>
+    <div id="sidebar-1" class="xx-p">
+      <%- partial('_sidebar/notice') %>
+    </div>
+    </div>
+  </aside>
+<% } %>
+<% if(is_post()){ %>
+<aside class="col s4 xx-ng xx-np">
+  <div id="fix" class="x-p m-2p" >
+    <%- partial('_sidebar/article_author') %>
+  </div>
+</aside>
+<% } %>

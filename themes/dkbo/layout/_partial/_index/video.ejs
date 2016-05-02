@@ -1,0 +1,17 @@
+<div class="">
+    <% site.tags.findOne({name: '影片'}).posts.sort('date', -1).limit(50).each(function(post){ %>
+        <article class="col m3 xx6 x12 video xx-ng xx-np">
+            <img src="<%- feature(post) %>" alt="" />
+            <a href="<%- url_for(post.path) %>">
+                <div class="imgbox xx-p">
+                    <div class="h4">
+                        <%= post.title %>
+                    </div>
+                    <div class="searchicon">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </a>
+        </article>
+        <% }) %>
+</div>

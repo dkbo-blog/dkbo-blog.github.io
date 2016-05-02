@@ -1,0 +1,51 @@
+<div class="row">
+    <div id="singlemenubutton" class="clearfix xx-show s-hide"><a href="/"><i  class="xx-p fleft fa fa-home"></i></a><i id="contacticon" class="xx-p fleft fa fa-pencil-square-o"></i><a href="https://www.facebook.com/lu.dkbo"><i  class="xx-p fleft fa fa-facebook"></i></a><a href="//codepen.io/dkbo/"><i  class="xx-p fleft fa fa-codepen"></i></a>
+        <a href="//dkbo.github.io"><i class="xx-p fleft fa fa-github"></i></a>
+    </div>
+</div>
+<div class="row" id="main">
+    <div class="article">
+        <%- partial('_function/breadcrumb_init') %>
+    </div>
+    <% page.posts.sort('date', -1).limit(5).each(function(post){ %>
+        <article class="article-content clearfix">
+            <figure class="col xx6 s4 xx-ng article-img">
+                <a href="<%- url_for(post.path) %>">
+                <img src="<%- feature(post) %>" width="100%"/>
+              </a>
+            </figure>
+            <div class="col xx6 s8 x-p s-2p">
+                <h2 class="article-title">
+                  <a href="<%- url_for(post.path) %>">
+                    <%= post.title %>
+                  </a>
+                </h2>
+                <div class="article-meta">
+                    <span><%= post.date.format(theme.dateformatindex) %></span><span> | </span>
+                    <span><a href="<%- url_for(cPath(post)) %>"><%- cName(post) %></a></span>
+                    <br />
+                    <span><%- partial('_function/show_tags', {post: post}) %></span>
+                </div>
+                <% var sub=function(str,len){
+              if(!str || !len) { return '...'; }
+    	      var a = 0;
+    	      var i = 0;
+            var temp = '';
+            for (i=0;i<str.length;i++){
+    		      if (str.charCodeAt(i)>255){
+    			      a+=2;
+    		      } else {
+    		  	    a++;
+              }
+    		      if(a > len) { return temp + '...'; }
+    		      temp += str.charAt(i);
+          	}
+    	  return str;
+      } %>
+                    <p>
+                        <%= sub(strip_html(post.content).trim(), 200) %>
+                    </p>
+                    <div class="clearfix"></div>
+        </article>
+        <% }) %>
+            </div>

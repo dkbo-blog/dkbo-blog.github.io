@@ -1,0 +1,12 @@
+<ul id="news">
+<% site.categories.findOne({name: '網站公告'}).posts.sort('date', -1).limit(10).each(function(post){ %>
+    <li>
+        <span>
+  <%= post.date.format(theme.dateformatsidebar) %>
+</span>
+        <a href="<%- url_for(post.path) %>">
+            <%= post.title %>
+        </a>
+    </li>
+    <% }) %>
+</ul>

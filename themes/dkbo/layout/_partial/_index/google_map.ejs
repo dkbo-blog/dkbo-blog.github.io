@@ -1,0 +1,18 @@
+<div id="google-map" class="google-map">
+    <label for=""><span><i class="fa fa-taxi"></i></span>
+        <input onkeypress="mapenter(event)" type="text" id="start" placeholder="起點" />
+        <button id="startvoice"><i class="fa-microphone fa"></i></button>
+    </label>
+    <label for=""><span><i class="fa fa-map-marker"></i></span>
+        <input onkeypress="mapenter(event)" type="text" id="end" placeholder="終點" />
+        <button id="endvoice"><i class="fa-microphone fa"></i></button>
+    </label>
+    <label for="">
+        <button onClick='initmap(),calcRoute()'>查詢地點/導航</button>
+    </label>
+</div>
+<div id="map"></div>
+<div id="direction-info">
+    <div id="control"></div>
+    <div id="direction-panel"></div>
+</div>

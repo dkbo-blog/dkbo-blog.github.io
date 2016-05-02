@@ -1,0 +1,6 @@
+<% post.tags.data.forEach(function(tag, i){ %>
+  <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+  <% if(i + 1 !== post.tags.data.length){ %>
+    ,
+  <% } %>
+<% }) %>

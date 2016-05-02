@@ -1,0 +1,43 @@
+
+<% site.categories.findOne({name: '心情札記'}).posts.sort('date', -1).limit(5).each(function(post){ %>
+  <article class="row article-content">
+      <figure class="col xx6 s4 xx-ng article-img">
+        <a href="<%- url_for(post.path) %>">
+          <img src="<%- feature(post) %>"/>
+        </a>
+      </figure>
+      <div class="col xx6 s8 xx-ng">
+          <div class="article-title h2 xx-ng">
+              <a href="<%- url_for(post.path) %>">
+                  <%= post.title %>
+              </a>
+          </div>
+          <div class="article-meta">
+              <span><%= post.date.format(theme.dateformatindex) %></span><span> | </span>
+              <span><a href="<%- url_for(cPath(post)) %>"><%- cName(post) %></a></span>
+              <br />
+              <span><%- partial('../_function/show_tags', {post: post}) %></span>
+          </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col xx-ng">
+        <% var sub=function(str,len){
+          if(!str || !len) { return '...'; }
+	      var a = 0;
+	      var i = 0;
+        var temp = '';
+        for (i=0;i<str.length;i++){
+		      if (str.charCodeAt(i)>255){
+			      a+=2;
+		      } else {
+		  	    a++;
+          }
+		      if(a > len) { return temp + '...'; }
+		      temp += str.charAt(i);
+      	}
+	  return str;
+  } %>
+        <p><%= sub(strip_html(post.content).trim(), 200) %></p>
+      </div>
+  </article>
+<% }) %>

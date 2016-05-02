@@ -1,0 +1,35 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <nav class="col s6 m4">
+                <div class="title">最新文章</div>
+                <%- partial('_footer/newscontent') %>
+            </nav>
+            <nav class="col s6 m4">
+                <div class="title">最新影片</div>
+                <%- partial('_footer/newsvideo') %>
+            </nav>
+            <nav class="col s6 m4">
+                <div class="title">網頁設計</div>
+                <%- partial('_footer/web_design') %>
+            </nav>
+        </div>
+</footer>
+<div id="copyright">
+    <div class="container">
+        <div class="col x12 s6 xx-center s-left">© 2015 DKBO. All Rights Reserved</div>
+    </div>
+</div>
+
+
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=492931704194505";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>

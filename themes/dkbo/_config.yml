@@ -1,0 +1,57 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+- path: /sitemap.xml
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
+# Miscellaneous
+google_analytics: UA-43399470-4
+disqus_shortname: dkbo
+
+favicon: /favicon.ico
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+
+#Date
+dateformatindex: YYYY[年]MM[月]DD[日]
+dateformatsidebar: YYYY[.]MM[.]DD[.]
+
+
+#author
+authorname1: DKBO
+email1: dk880842@gmail.com
+description1: 小小前端工程師，做出的網頁必定兼容電腦、手機、平板等裝置。會簡單的後端語言連接資料庫能做出簡易的會員系統、訂單管理系統、物流管理系統等等。正朝著網頁美感路線努力中。
+authorname2: Lala
+email2: sally08222002@gmail.com
+description2: 2014.11.05出生，爸比媽咪希望我可以健康快樂長大～所以名字跟小名都堅持要有"樂"～Just Love♡有張超音波照看起來很像蘋果，所以樂+果，小名就正式變成可樂果。

@@ -1,0 +1,34 @@
+<ul class="breadcrumb xx-hide s-show">
+    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="<%= config.root %>" itemprop="url" title="<%= config.title %>">
+            <span itemprop="title"><%= config.title %></span></a>
+    </li>
+    <% if( is_post() ) { %>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span class="divider">›</span>
+            <a href="<%- url_for(page.categories.data[0].path) %>" itemprop="url" title='<%= page.categories.data[0].name %>'>
+                <span itemprop="title"><a href="<%- url_for(cPath(page))%>"><%- cName(page) %></a></span>
+            </a>
+        </li>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+            <span class="divider">›</span>
+            <span itemprop="title">
+              <%= page.title %>
+            </span>
+        <li>
+        <% } else { %>
+            <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+                <span class="divider">›</span>
+                <span itemprop="title">
+<% if ( is_category() ) { %>
+  <%= page.category %>
+<% } else if( is_tag() ) { %>
+  <%= page.tag %>
+<% } else if( is_month() ) { %>
+  <%= page.month %>
+<% } else if( is_year() ) { %>
+  <%= page.year %>
+<% } %></span>
+            </li>
+            <% } %>
+</ul>

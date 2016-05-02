@@ -1,0 +1,17 @@
+<%
+if(find === null){
+  object = object.sort('date', -1).limit(limit)
+} else {
+  object = object.findOne({name: find}).posts.sort('date', -1).limit(limit)
+}
+%>
+<ul class="footlist">
+    <% object.each(function(post){ %>
+        <li>
+            <a href="<%- url_for(cPath(post)) %>">[<%- cName(post) %>]</a>
+                <a href="<%- url_for(post.path) %>" title="<%= post.title %>">
+                    <%= post.title %>
+                </a>
+        </li>
+    <% }) %>
+</ul>

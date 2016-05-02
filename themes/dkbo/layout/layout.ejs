@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- partial('_partial/head') %>
+  </head>
+  <body>
+  <div id="wrap" <% if (is_post()){ %> class="single_body"  <% } %>>
+  <%- partial('_partial/header') %>
+  <% if(is_post()) { %>
+    <div class="container" id="artical-container" style="margin-left:0;">
+  <% } else { %>
+  <div class="container">
+  <% } %>
+      <%- body %>
+  </div>
+  <%- partial('_partial/footer') %>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <%- js('js/main') %>
+</body>
+</html>
