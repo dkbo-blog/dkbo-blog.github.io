@@ -1,0 +1,26 @@
+<div class="row">
+  <% if(!is_post()){ %>
+    <div id="menubutton" class="clearfix xx-show s-hide">
+      <div class="xx-fright">
+        <i id="menubuttonicon" class="xx-p fa fa-navicon"></i>
+        <i class="xx-p totop fa fa-angle-double-up"></i>
+      </div>
+    </div>
+  <% } else { %>
+    <div id="singlemenubutton" class="clearfix xx-show s-hide">
+      <a href="/">
+        <i  class="xx-p fa fa-home"></i>
+      </a>
+      <a href="https://www.facebook.com/lu.dkbo">
+        <i  class="xx-p fa fa-facebook"></i>
+      </a>
+      <a href="//codepen.io/dkbo/">
+        <i  class="xx-p fa fa-codepen"></i>
+      </a>
+        <a href="//dkbo.github.io">
+          <i class="xx-p fa fa-github"></i>
+        </a>
+        <i class="xx-p totop fa fa-angle-double-up"></i>
+    </div>
+  <% } %>
+</div>

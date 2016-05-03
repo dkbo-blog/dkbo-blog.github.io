@@ -1,10 +1,8 @@
 @import susy
-@import variable
+@import custom/variable
+@import custom/layout
+@import plugin/hightlight
 
-*
-  box-sizing: border-box
-#wrap.single_body
-  background: #ededed
 
 header
   border-top: 10px #F095D4 solid
@@ -70,7 +68,7 @@ footer
   background: #422B38
   #single-content
     background: white
-#menubutton,#singlemenubutton
+#menubutton
   position: fixed
   top: 0
   left: 0
@@ -83,8 +81,7 @@ footer
     cursor: pointer
     font-size: 2em
     color: white
-#singlemenubutton
-  background: black
+
 .x-bar
   text-align: center
   position: fixed
@@ -117,18 +114,9 @@ ul#relationship
       opacity: 0.7
       &:hover
         opacity: 1
-  li
     a
       text-decoration: none
       color: black
-#single_breadcrumb
-  .breadcrumb
-    background: #595252
-  a
-    color: white
-    text-decoration: none
-  span
-    color: white
 
 #social-icon
   text-align: center
@@ -144,65 +132,9 @@ ul#relationship
       color: black
     &#github:hover
       color: black
-//留言板樣式
+//disqus 留言板
 #comments
   padding: 20px
-  background: #fff
-  li
-    list-style: none
-  li.comment-list-box
-    padding: 10px 0 10px 5px
-    margin: 20px 5px 20px 0
-    border: 1px solid #FBB
-    position: relative
-    .comment-author img
-      float: left
-      margin: 0px 10px 5px 0px
-      border-radius: 50%
-      border: 1px solid #cccccc
-    a.comment-reply-link
-      border: 1px solid #FBB
-      padding: 5px 13px
-      color: #000
-      border-radius: 20px
-      font-size: 16px
-      float: right
-      margin-right: 10px
-      text-decoration: none
-      &:hover
-        background: rgb(255, 126, 126)
-        color: #fff
-    a.comment-edit-link
-      text-decoration: none
-      border: 1px solid #FBB
-      padding: 5px 13px
-      border-radius: 20px
-      font-size: 12px
-      color: #000
-      &:hover
-        background: rgb(255, 126, 126)
-        color: #fff
-  ul.children
-    list-style-type: none
-    padding: 0
-    margin: 0
-    padding: 0
-    li
-      margin-bottom: 0
-  p
-    line-height: 1.48
-
-  input[type="text"]
-    width: 30%
-  .comment-meta
-    font-size: 13px
-    line-height: 28px
-    color: #999999
-.cancel-comment-reply
-  line-height: 1.48
-.comment-list
-  margin: 10px 0 40px 0
-  padding: 0
 
 
 
@@ -231,47 +163,7 @@ ul#relationship
     padding: 0 5px
     color: #F0A7B8
 
-//author
-#fix
-  position: relative
-.author
-  width: 100%
-  margin-top: 20px
-  padding: 20px
-  border: #F9C3E9 10px dotted
-  float: left
-  &:nth-child(1)
-    margin-top: 0
-  img
-    border-radius: 50%
-    height: 100%
-    width: 100%
-  .text
-    float: left
-    width: 80%
-    padding-left: 20px
-    line-height: 150%
-  .name
-    width: 100%
-    text-align: center
-  .description
-    text-align: justify
-    text-justify: distribute
-    float: left
-    width: 100%
-    +susy-media(x)
-      font-size: 12pt
-    +susy-media(s)
-      font-size: 16pt
-    +susy-media(m)
-      font-size: 18pt
-    +susy-media(l)
-      font-size: 20pt
-    line-height: 150%
-  .social
-    float: right
-    width: 100%
-    text-align: right
+
 
 //article-author
 .article-author
@@ -353,231 +245,8 @@ ul#relationship
 .page-numbers.current
   color: #FFF
   background: #666
-//contact
-#contact
-  position: fixed
-  left: 0
-  height: 100%
-  width: 100%
-  overflow: auto
-  +susy-media(s)
-    width: 600px
-  margin-left: -9999px
-  transition: 0.2s all ease
-  top: 0
-  z-index: 999
-  &_title
-    padding: 10px 0
-    text-align: center
-    font-size: 1.6em
-    background: rgb(249, 208, 208)
-    font-weight: bold
-  &_box
-    background: #FCF4F5
-    min-height: 100%
-  &_tip
-    font-size: 1em
-    p
-      text-align: center
-  &_button
-    position: absolute
-    cursor: pointer
-    right: 10px
-    top: 5px
-    color: #fff
-    transition: 0.4 all ease
-    &:hover
-      color: #EFEFEF
-    i
-      font-size: 1.6em
-  &_textform
-    +susy-media(x)
-      padding: 10px 20px
-    +susy-media(m)
-      padding: 10px 40px
-    +susy-media(l)
-      padding: 10px 50px
-    label
-      display: table
-      width: 100%
-      margin: auto
-      span
-        display: table-cell
-        width: 50px
-        text-align: center
-        background: rgb(249, 208, 208)
-        i
-          font-size: 1.5em
-          color: #fff
-          text-shadow: 1px 1px 5px #939393
-      button
-        padding: 7px 12px
-        border: 1px solid #FBB
-        background: rgb(249, 208, 208)
-        font-size: 1.5em
-        width: 100%
-        cursor: pointer
-        outline: none
-        &:hover
-          color: #fff
-          background: #ff7e7e
-      input[type="text"],input[type="url"],input[type="email"],input[type="tel"]
-        outline: none
-        padding: 7px 5px
-        border: 1px solid #EEE
-        font-size: 1.5em
-        width: 100%
-        &:focus
-          border-color: #FBB
-          transition: border-color 0.2s ease-in
-      textarea
-        width: 100%
-        border: 1px solid #EEE
-        padding: 8px
-        outline: 0
-        font-size: 1.5em
-        min-height: 250px
-        &:focus
-          border-color: #FBB
-          transition: border-color 0.2s ease-in
-#contact_box_dkbo
-  background: white
-  min-height: 100%
-  #contact_title
-    background: #422B38
-    color: #fff
-  #contact_textform
-    span
-      background: #422B38
-    input[type="text"],input[type="url"],input[type="email"],input[type="tel"],textarea
-      &:focus
-        border-color: #422B38
-    button
-      background: #422B38
-      border: 1px solid #422B38
-      color: white
-      &:hover
-        color: #fff
-          background: black
 
-.contact_show
-  cursor: pointer
-  &:hover img
-    opacity: .8
-#map
-  width: 100%
-  height: 600px
-#google-map
-  position: relative
-  label
-    display: table
-    width: 100%
-    span
-      display: table-cell
-      width: 50px
-      text-align: center
-      vertical-align: middle
-      background: rgb(249, 208, 208)
-      i
-        font-size: 20pt
-        color: #fff
-        text-shadow: 1px 1px 5px #939393
-    input[type="text"]
-      outline: none
-      padding: 7px 5px
-      border: 1px solid #F9D0D0
-      font-size: 18pt
-      width: 100%
-      &:focus
-        border-color: #FBB
-        transition: border-color 0.2s ease-in
-    button
-      padding: 7px 12px
-      border: 1px solid #FBB
-      background: rgb(249, 208, 208)
-      font-size: 20pt
-      width: 100%
-      cursor: pointer
-      outline: none
-      &:hover
-        color: #fff
-        background: #ff7e7e
-.video
-  transition: 0.3s all ease
-  overflow: hidden
-  line-height: 0
-  &:hover img
-    opacity: .8
-  img
-    width: 100%
-  .imgbox
-    z-index: 9
-    position: absolute
-    top: -500%
-    left: 0
-    height: 100%
-    width: 100%
-    background: rgba(0, 0, 0, 0.45)
-    color: white
-    transition: .2s all ease
-    text-align: center
-    .h4
-      margin: 0
-    a
-      color: white
-      text-decoration: none
-    .searchicon
-      position: absolute
-      top: 50%
-      left: 50%
-      margin-left: -0.75em
-      margin-top: -0.75em
-      .videohotview
-        line-height: 1.2
-      i
-        font-size: 1.5em
-  &:hover .imgbox
-    top: 0
-#single-page
-  padding-left: 0
-  padding-right: 0
-.singlevideo
-  width: 100%
-  +susy-media(x)
-    height: 200px
-  +susy-media(xx)
-    height: 300px
-  +susy-media(s)
-    height: 400px
-  +susy-media(m)
-    height: 500px
-  +susy-media(l)
-    height: 600px
-.fleft
-  float: left
-.fright
-  float: right
-.wraper-15
-  padding: 15px
-  position: relative
-.wraper-20
-  padding: 37px
-  position: relative
-.wraper-25
-  padding: 25px
-  position: relative
-.wraper-50
-  padding: 50px
-  position: relative
-.colorg
-  color: green
-.colorr
-  color: red
-.colorb
-  color: blue
-.clearfix
-  clear: both
-  *zoom: 1
+
 .box-box
   background: linear-gradient(#FFB5C3, #F5A9B8 60%, #E86A82)
   border: 3px solid #FCF4F5
@@ -624,20 +293,6 @@ ul#relationship
     &.click
       opacity: 1
       height: auto
-.heart
-  position: fixed
-  width: 1200px
-  font-size: 75em
-  color: red
-  left: 50%
-  margin-left: -600px
-  z-index: -1
-a:hover
-  text-decoration: none
-.show
-  display: block
-.hide
-  display: none
 
 ul#sidetag
   position: relative
@@ -670,106 +325,3 @@ ul#news
   background: #fff
 #sidebar-2
   padding: 10px
-
-.stock
-  +susy-media(x)
-    padding: 0
-    font-size: 9pt
-  +susy-media(s)
-    padding: 0 10px
-    font-size: 11pt
-  +susy-media(m)
-    font-size: 12pt
-  display: table
-
-  font-family: sans-serif
-  width: 100%
-  .red
-    color: red
-  .green
-    color: green
-  .yellow
-    color: yellow
-  .greenbg
-    background: green
-    color: #fff
-  .redbg
-    background: red
-    color: #fff
-  .tr
-    display: table-row
-  .td,.th
-    display: table-cell
-    padding: 5px 2px
-    i
-      cursor: pointer
-  .select
-    cursor: pointer
-  .th
-    background: #F9D0D0
-    font-weight: bold
-  .right
-    text-align: right
-  .left
-    text-align: left
-  .center
-    text-align: center
-#singlestock,
-  &_title
-    margin: 30px 0
-    padding: 10px 0
-    text-align: center
-    font-size: 20pt
-    background: rgb(249, 208, 208)
-    font-weight: bold
-.stocktitle
-  margin: 30px 0
-  padding: 10px 0
-  text-align: center
-  font-size: 20pt
-  background: rgb(249, 208, 208)
-  font-weight: bold
-#project
-  transition: all 0.4s ease
-#addstock
-  position: relative
-  margin: 10px
-  input
-    width: 150px
-    outline: none
-    padding: 0 5px
-    border: 1px solid #ccc
-    &:focus
-      border-color: #FBB
-      transition: border-color 0.2s ease-in
-  button
-    cursor: pointer
-    border: none
-    height: 100%
-    position: absolute
-    top: 0
-    margin-left: -21px
-    color: #fff
-    background: linear-gradient(#FFB5C3, #F5A9B8 60%, #E86A82)
-    &:hover
-      background: #8E6070
-  #stockset
-    float: right
-    position: relative
-    color: #fff
-    i
-      background: linear-gradient(#FFB5C3, #F5A9B8 60%, #E86A82)
-      padding: 5px
-      cursor: pointer
-      margin: 0 3px
-      &.select,&:hover
-        background: #8E6070
-#black_shadow
-  position: fixed
-  min-height: 100%
-  min-width: 100%
-  background: black
-  opacity: 0.8
-  display: none
-  top: 0
-  z-index: 998

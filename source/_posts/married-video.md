@@ -9,7 +9,7 @@ tag:
 ---
 時間過很快，可樂果都出來很久了 來回味一下吧
 
-<div class="singlevideo">
+<div class="video video-16x9">
   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/X-PIawSDcbY" frameborder="0" allowfullscreen="">
 </iframe>
 </div>

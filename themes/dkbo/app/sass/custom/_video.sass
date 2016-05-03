@@ -1,0 +1,36 @@
+.dkvideo
+  transition: 0.3s all ease
+  overflow: hidden
+  line-height: 0
+  &:hover img
+    opacity: .8
+  img
+    width: 100%
+  .imgbox
+    z-index: 9
+    position: absolute
+    top: -500%
+    left: 0
+    height: 100%
+    width: 100%
+    background: rgba(0, 0, 0, 0.45)
+    color: white
+    transition: .2s all ease
+    text-align: center
+    .h4
+      margin: 0
+    a
+      color: white
+      text-decoration: none
+    .searchicon
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-left: -0.75em
+      margin-top: -0.75em
+      .videohotview
+        line-height: 1.2
+      i
+        font-size: 1.5em
+  &:hover .imgbox
+    top: 0

@@ -1,0 +1,65 @@
+#single-page
+  h2,h3
+    border-left: .5em solid
+    border-radius: .2em
+  h2
+    border-left-color: $h2-border-color
+  h3
+    border-left-color: $h3-border-color
+
+
+#wrap.single_body
+  background: $signage-body-bg
+//author
+
+.author
+  width: 100%
+  margin-top: 20px
+  padding: 20px
+  border: #F9C3E9 10px dotted
+  float: left
+  &:nth-child(1)
+    margin-top: 0
+  img
+    border-radius: 50%
+    height: 100%
+    width: 100%
+  .text
+    float: left
+    width: 80%
+    padding-left: 20px
+    line-height: 150%
+  .name
+    width: 100%
+    text-align: center
+  .description
+    text-align: justify
+    text-justify: distribute
+    float: left
+    width: 100%
+  .social
+    float: right
+    width: 100%
+    text-align: right
+#single_breadcrumb
+  .breadcrumb
+    background: #595252
+  a
+    color: white
+    text-decoration: none
+  span
+    color: white
+
+,#singlemenubutton
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  text-align: center
+  background: black
+  z-index: 2
+  transition: .05s all ease
+  i
+    cursor: pointer
+    font-size: 2em
+    color: white

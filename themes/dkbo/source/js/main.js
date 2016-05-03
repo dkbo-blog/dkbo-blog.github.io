@@ -67,11 +67,6 @@ jQuery(window).load(function() {
                 _sidebar = data
             }
         });
-        $("#contact_button,.contact_show,#contacticon").on("click",
-            contact);
-        topmenu();
-        $(window).resize(topmenu);
-
     })(jQuery)
 });
 // 移除室內設計的 滾輪捲動
@@ -87,35 +82,4 @@ function preventDefault(e) {
     if (e.preventDefault)
         e.preventDefault();
     e.returnValue = false;
-}
-
-function topmenu() {
-    if ($(window).width() < 768) {
-        var height = $("#menubutton,#singlemenubutton").height()
-        $("#wrap").css({
-            "padding-top": height
-        });
-    } else
-        $("#wrap").css({
-            "padding-top": 0
-        });
-}
-
-function contact() {
-    var _block = $("#contact"),
-        v = _block.data("view");
-    if (v == true) {
-        document.getElementById("contact").style.marginLeft = "-9999px";
-        $("#black_shadow").fadeOut(200);
-        _block.data("view", false)
-    } else {
-        document.getElementById("contact").style.marginLeft = 0;
-        $("#black_shadow").fadeIn(200);
-        _block.data("view", true)
-    }
-}
-
-
-function contact_tip_close() {
-    $("#contact_tip p").fadeOut(500)
 }

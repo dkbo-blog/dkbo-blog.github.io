@@ -9,4 +9,4 @@ tag:
 - 日記
 ---
 用背巾行動時~都很容易都睡著了XD! 是感覺很安心嗎@@
-<div class="singlevideo"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/raGP6m8Vynw" frameborder="0" allowfullscreen></iframe></div>
+<div class="video video-16x9"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/raGP6m8Vynw" frameborder="0" allowfullscreen></iframe></div>

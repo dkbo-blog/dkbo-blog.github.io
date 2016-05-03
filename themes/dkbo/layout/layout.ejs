@@ -17,11 +17,12 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <% if(is_home()) { %>
     <script src="http://maps.google.com/maps/api/js?sensor=false&language=zh-TW&libraries=places"></script>
-    <%- js('js/custom') %>
+    <%- js('js/googlemap') %>
     <%- js('js/main') %>
   <% } %>
   <% if(is_post()) { %>
-    <%- js('js/single') %>
+    <%- js('js/signage') %>
   <% } %>
+  <%- js('js/index') %>
 </body>
 </html>

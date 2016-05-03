@@ -1,12 +1,12 @@
 
 <% site.categories.findOne({name: '心情札記'}).posts.sort('date', -1).limit(5).each(function(post){ %>
   <article class="row article-content">
-      <figure class="col xx6 s4 xx-ng article-img">
+      <figure class="col x6 s4 xx-ng article-img">
         <a href="<%- url_for(post.path) %>">
           <img src="<%- feature(post) %>"/>
         </a>
       </figure>
-      <div class="col xx6 s8 xx-ng">
+      <div class="col x6 s8 xx-ng">
           <div class="article-title h2 xx-ng">
               <a href="<%- url_for(post.path) %>">
                   <%= post.title %>

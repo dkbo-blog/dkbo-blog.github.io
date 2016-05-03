@@ -1,20 +1,15 @@
-<div class="row">
-    <div id="singlemenubutton" class="clearfix xx-show s-hide"><a href="/"><i  class="xx-p fleft fa fa-home"></i></a><i id="contacticon" class="xx-p fleft fa fa-pencil-square-o"></i><a href="https://www.facebook.com/lu.dkbo"><i  class="xx-p fleft fa fa-facebook"></i></a><a href="//codepen.io/dkbo/"><i  class="xx-p fleft fa fa-codepen"></i></a>
-        <a href="//dkbo.github.io"><i class="xx-p fleft fa fa-github"></i></a>
-    </div>
-</div>
 <div class="row" id="main">
     <div class="article">
         <%- partial('_function/breadcrumb_init') %>
     </div>
     <% page.posts.sort('date', -1).limit(5).each(function(post){ %>
         <article class="article-content clearfix">
-            <figure class="col xx6 s4 xx-ng article-img">
+            <figure class="col s4 xx-ng x-p s-2p article-img">
                 <a href="<%- url_for(post.path) %>">
                 <img src="<%- feature(post) %>" width="100%"/>
               </a>
             </figure>
-            <div class="col xx6 s8 x-p s-2p">
+            <div class="col s8 x-p s-2p">
                 <h2 class="article-title">
                   <a href="<%- url_for(post.path) %>">
                     <%= post.title %>

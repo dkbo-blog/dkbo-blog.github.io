@@ -9,7 +9,7 @@ tag:
 ---
 以後在哭的時候，就用這招伺候這小子吧！
 
-<div class="singlevideo">
+<div class="video video-16x9">
   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lqzRCbdhyEU" frameborder="0" allowfullscreen="">
 </iframe>
 </div>
