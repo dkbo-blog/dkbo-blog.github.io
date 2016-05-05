@@ -2,6 +2,12 @@
   <% if(!is_post()){ %>
     <div id="menubutton" class="clearfix xx-show s-hide">
       <div class="xx-fright">
+        <div class="row">
+          <% if(!is_home()){ %>
+        <a href="/">
+          <i  class="xx-p fa fa-home"></i>
+        </a>
+        <% } %>
         <i id="menubuttonicon" class="xx-p fa fa-navicon"></i>
         <i class="xx-p totop fa fa-angle-double-up"></i>
       </div>

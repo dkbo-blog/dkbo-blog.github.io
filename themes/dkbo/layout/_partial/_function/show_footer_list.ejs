@@ -1,6 +1,9 @@
 <%
 if(find === null){
-  object = object.sort('date', -1).limit(limit)
+  object = object.filter(function(test){
+    if(cName(test) != filter)
+    return test
+  }).sort('date', -1).limit(limit);
 } else {
   object = object.findOne({name: find}).posts.sort('date', -1).limit(limit)
 }
