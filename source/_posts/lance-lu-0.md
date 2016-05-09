@@ -9,10 +9,7 @@ tag:
 feature: images/feature/lance-lu-0.jpg
 ---
 終於準備要爬啦!!
-
-<div class="fb-video" data-href="https://www.facebook.com/ulove1105/videos/vb.432412180257674/482364235262468/" data-width="100%">
-  <div class="fb-xfbml-parse-ignore">
-  <blockquote cite="/ulove1105/videos/482364235262468/">學爬的前奏？
-6m25d / 9.6kg / 76cm</blockquote>
-</div>
+<div class="video video-16x9">
+  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fulove1105%2Fvideos%2F482364235262468%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true">
+</iframe>
 </div>

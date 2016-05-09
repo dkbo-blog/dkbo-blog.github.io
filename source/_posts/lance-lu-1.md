@@ -7,4 +7,7 @@ tag:
 - 宇樂
 - 影片
 ---
-<div class="video video-16x9"><iframe width="100%" height="315" src="https://www.youtube.com/embed/AF9Y-HcsbPU" frameborder="0" allowfullscreen></iframe></div>
+<div class="video video-16x9">
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/AF9Y-HcsbPU" frameborder="0" allowfullscreen="">
+</iframe>
+</div>

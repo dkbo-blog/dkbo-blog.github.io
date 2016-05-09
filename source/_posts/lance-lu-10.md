@@ -9,11 +9,7 @@ tag:
 feature: images/feature/lance-lu-10.jpg
 ---
 小時候就要訓練一下了~長大應該很有潛力
-<div id="fb-root"></div>
-<div class="fb-video" data-allowfullscreen="true" data-href="https://www.facebook.com/ulove1105/videos/490100914488800/">
-<div class="fb-xfbml-parse-ignore">
-<blockquote cite="/ulove1105/videos/490100914488800/">運動一下(^O^)
-
-Posted by <a href="https://www.facebook.com/ulove1105">宇樂×可樂果 Just Love</a> on 2015年6月17日</blockquote>
-</div>
+<div class="video video-16x9">
+  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fulove1105%2Fvideos%2F490100914488800%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true">
+</iframe>
 </div>
