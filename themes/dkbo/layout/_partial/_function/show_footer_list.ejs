@@ -1,19 +1,42 @@
 <%
 if(find === null){
   object = object.filter(function(test){
-    if(cName(test) != filter)
-    return test
+    var isok = true;
+    filter.forEach(function(v){
+      if(cName(test) == v) {
+        isok = false;
+      }
+    });
+    if(isok) {
+      return test
+    }
   }).sort('date', -1).limit(limit);
 } else {
   object = object.findOne({name: find}).posts.sort('date', -1).limit(limit)
 }
 %>
 <ul class="footlist">
+  <% var sub=function(str,len){
+    if(!str || !len) { return ''; }
+    var a = 0;
+    var i = 0;
+    var temp = '';
+    for (i=0;i<str.length;i++){
+      if (str.charCodeAt(i)>255){
+        a+=2;
+      } else {
+        a++;
+      }
+      if(a > len) { return temp + ''; }
+      temp += str.charAt(i);
+    }
+  return str;
+  } %>
     <% object.each(function(post){ %>
         <li>
             <a href="<%- url_for(cPath(post)) %>">[<%- cName(post) %>]</a>
                 <a href="<%- url_for(post.path) %>" title="<%= post.title %>">
-                    <%= post.title %>
+                    <%= sub(post.title.trim(), 18) %>
                 </a>
         </li>
     <% }) %>

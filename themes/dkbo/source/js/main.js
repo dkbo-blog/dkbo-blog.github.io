@@ -5,8 +5,8 @@ var t_on = false,
 
 jQuery(window).load(function() {
     (function($) {
-        if ($.trim(localStorage.init) == "" || isNaN(localStorage.init)) {
-            localStorage.init = 1;
+        if ($.trim(localStorage.init) === "" || isNaN(localStorage.init)) {
+            localStorage.init = 2;
         }
         if (!localStorage.stockinfo || $.trim(localStorage.stockinfo) == "") {
             localStorage.stockinfo = _stocklist;
