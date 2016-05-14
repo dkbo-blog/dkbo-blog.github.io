@@ -1,6 +1,7 @@
 <script src="https://dkbo.github.io/npc/npc.js"></script>
 <div class="col col-xs12">
   <button type="button" class="primary" onclick="toggle(this)">暫停</button>
+  <input type="text" placeHolder="設定數量" onkeyup="setNum(this.value)"/>
   <canvas id="npc"></canvas>
 </div>
 <script>
@@ -14,4 +15,7 @@
       btn.innerHTML = '暫停';
     }
   }
+  function setNum(value){
+    a.NPC = a.NPCSet(value);
+ }
 </script>
