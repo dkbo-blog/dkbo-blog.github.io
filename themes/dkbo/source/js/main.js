@@ -69,17 +69,3 @@ jQuery(window).load(function() {
         });
     })(jQuery)
 });
-// 移除室內設計的 滾輪捲動
-var house = document.getElementById("houseiframe");
-if (house.addEventListener) // older FF
-    house.addEventListener('DOMMouseScroll', preventDefault, false);
-house.onwheel = preventDefault; // modern standard
-house.onmousewheel = preventDefault; // older browsers, IE
-house.ontouchmove = preventDefault; // mobile
-
-function preventDefault(e) {
-    e = e || window.event;
-    if (e.preventDefault)
-        e.preventDefault();
-    e.returnValue = false;
-}
