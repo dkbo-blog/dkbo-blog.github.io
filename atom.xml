@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dkbo-blog.github.io/"/>
-  <updated>2016-11-20T02:43:08.004Z</updated>
+  <updated>2016-11-19T17:04:32.188Z</updated>
   <id>https://dkbo-blog.github.io/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>好一段時間沒更新了</title>
+    <link href="https://dkbo-blog.github.io/2016/11/20/long-time-no-up/"/>
+    <id>https://dkbo-blog.github.io/2016/11/20/long-time-no-up/</id>
+    <published>2016-11-19T16:02:00.000Z</published>
+    <updated>2016-11-19T17:04:32.188Z</updated>
+    
+    <content type="html"><![CDATA[<p>可樂果已經兩歲了，回想當初剛被拔出來時，在琉璃台清洗的時，開始打拳時，開始爬時，開始叫爸爸媽媽的時，以及開始走時，竟只是轉眼瞬間而已。</p>
+<p>顧著小孩雖然覺得有點累，沒辦法專心寫程式，只要一被中斷，思緒就好難去銜接起來，於是就開始用程序員最愛的邏輯方式去規劃，該怎樣做效率最高，<br>但最終還是敵不過玩遊戲的誘惑，我這個人啊只要一沉迷就不好去約束自己…。</p>
+<p>WEB前端工程師在南部與北部，真的差異非常大，有個同事的經歷是，她的主管回她說，這裡工作是做網站的唷!不是在美工的。真的是壓低了前端工程師的技術門檻啊，<br>但無可奈何，畢竟我已經習慣於南部生活，應該也不會想北上去找工作及定居，不過最近有聽說南部前端工程師的職缺有比較多一點了</p>
+<p>WEB前端工程師，雖然說要專精前端，但還是要懂一些後端語言及連接資料庫會比較好，為什麼這麼說呢?原因是因為有同事專門接案寫購物車系統，功能單純就是會員功能、商品上下架就 3萬，串金流加 5000，FB會員加 2000，我就在想…靠北 FB 會員..不就單純用FB API 抓到 uid 存到資料庫當帳號而已嗎…，串金流也只需要他們給 API 在串而已…，現在購物車系統框架也很多，Wordpress 有模組，Joomla 也有模組，或是其他單純的購物車框架 <a href="http://ecshop.tw/" target="_blank" rel="external">ECShop</a>、<a href="https://www.opencart.com/" target="_blank" rel="external">OpenCart</a> 、<a href="https://www.oscommerce.com/" target="_blank" rel="external">osCommerce</a>，又或是已經自己寫好模板再改即可….所以要懂得賺錢，就不能完全依靠興趣，又或者說…錢一直來興趣就來啦!!</p>
+<p>最近也花時間把之前<a href="http://dkbo.github.io" target="_blank" rel="external">RPG履歷</a>給更新程式碼，雖然花了不少時間，但也完成了，不過在外人看來可能不知道我改了甚麼，而且還捨去了不少東西。</p>
+<p>React 跟 React Native 現在可以說是全世界話題數最高，雖然當初有先投資一些時間去學習 React 不過最近重新學習時，發現改了非常多，在開發工具上我就換了不少，首先前端工程師無法不知的打包工具 Webpack，實在是太強大好用了。以下是一段sass/scss + postcss + css 的串接處理!!真的相當方便，最近也覺得 sass 是不是快被淘汰啦…畢竟 postcss 有點強大 precss 就幾乎可以取代掉 scss 了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123; <span class="attr">test</span>: <span class="regexp">/\.s?a?c?ss$/</span>,</div><div class="line">  <span class="attr">loader</span>: isProduction()</div><div class="line">    ? ExtractTextPlugin.extract(<span class="string">'style'</span>, <span class="string">'css!postcss!sass'</span>)</div><div class="line">    : <span class="string">'style!css!postcss!sass'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>回到剛剛說購物車的部分，最近也在迷茫中，聽到同事說購物車單子多到..接不完推掉，這感覺..就是叫我趕緊效仿他去接案多些生活津貼!，只是最近有些迷茫，我該專注在於 NodeJS 還是 PHP 呢! PHP 好處是~以前在公司有寫過沒安全性的網站…但沒學過框架~想開始去學學 <a href="https://laravel.com/" target="_blank" rel="external">Laravel</a>，這款熱門度很高的 PHP Framework，還是說我要專注學 NodeJS 的 <a href="https://www.meteor.com/" target="_blank" rel="external">meteor</a> 這款全端 Framework 又或者單純用 NodeJS + Koa2 來寫 Server 的部分就好，我個人比較偏向愛好 websocket 效果很讚，未來已定兩個都要學，只是在於哪個要先學，哪個後學。</p>
+<p>至於前端的部分依舊用 React + Redux 來當作 View ， 雖然現在 Vue/Vue2 也蠻多人推薦的。</p>
+<p>至於 CSS 及 JS 函示庫~~ ==…直接套 BootStrap 跟 Lodash/ramda 就可以了…畢竟自己寫真的還要花時間去管跨相容性…真的沒那麼多時間去花了。</p>
+<p>最後說一下…希望明年這月…我已經案子多到可以推掉了XD</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;可樂果已經兩歲了，回想當初剛被拔出來時，在琉璃台清洗的時，開始打拳時，開始爬時，開始叫爸爸媽媽的時，以及開始走時，竟只是轉眼瞬間而已。&lt;/p&gt;
+&lt;p&gt;顧著小孩雖然覺得有點累，沒辦法專心寫程式，只要一被中斷，思緒就好難去銜接起來，於是就開始用程序員最愛的邏輯方式去規劃，該怎樣
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+  </entry>
   
   <entry>
     <title>首頁修改</title>
@@ -293,9 +327,9 @@ box-sizing: border-box;
     
       <category term="可樂果" scheme="https://dkbo-blog.github.io/tags/%E5%8F%AF%E6%A8%82%E6%9E%9C/"/>
     
-      <category term="影片" scheme="https://dkbo-blog.github.io/tags/%E5%BD%B1%E7%89%87/"/>
-    
       <category term="宇樂" scheme="https://dkbo-blog.github.io/tags/%E5%AE%87%E6%A8%82/"/>
+    
+      <category term="影片" scheme="https://dkbo-blog.github.io/tags/%E5%BD%B1%E7%89%87/"/>
     
   </entry>
   
@@ -337,19 +371,19 @@ box-sizing: border-box;
       <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
     
     
-      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
-    
       <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
     
+      <category term="Compass" scheme="https://dkbo-blog.github.io/tags/Compass/"/>
+    
       <category term="Gulp" scheme="https://dkbo-blog.github.io/tags/Gulp/"/>
+    
+      <category term="Jade" scheme="https://dkbo-blog.github.io/tags/Jade/"/>
+    
+      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
     
       <category term="Node.js" scheme="https://dkbo-blog.github.io/tags/Node-js/"/>
     
       <category term="Sass" scheme="https://dkbo-blog.github.io/tags/Sass/"/>
-    
-      <category term="Compass" scheme="https://dkbo-blog.github.io/tags/Compass/"/>
-    
-      <category term="Jade" scheme="https://dkbo-blog.github.io/tags/Jade/"/>
     
       <category term="Susy" scheme="https://dkbo-blog.github.io/tags/Susy/"/>
     
@@ -544,9 +578,9 @@ box-sizing: border-box;
     
       <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
     
-      <category term="React" scheme="https://dkbo-blog.github.io/tags/React/"/>
-    
       <category term="Path Of Exile" scheme="https://dkbo-blog.github.io/tags/Path-Of-Exile/"/>
+    
+      <category term="React" scheme="https://dkbo-blog.github.io/tags/React/"/>
     
   </entry>
   
@@ -761,6 +795,12 @@ box-sizing: border-box;
     
       <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
     
+      <category term="Gulp" scheme="https://dkbo-blog.github.io/tags/Gulp/"/>
+    
+      <category term="Node.js" scheme="https://dkbo-blog.github.io/tags/Node-js/"/>
+    
+      <category term="Sass" scheme="https://dkbo-blog.github.io/tags/Sass/"/>
+    
       <category term="HTML" scheme="https://dkbo-blog.github.io/tags/HTML/"/>
     
       <category term="canvas" scheme="https://dkbo-blog.github.io/tags/canvas/"/>
@@ -769,13 +809,7 @@ box-sizing: border-box;
     
       <category term="es6" scheme="https://dkbo-blog.github.io/tags/es6/"/>
     
-      <category term="Gulp" scheme="https://dkbo-blog.github.io/tags/Gulp/"/>
-    
-      <category term="Node.js" scheme="https://dkbo-blog.github.io/tags/Node-js/"/>
-    
       <category term="Redux" scheme="https://dkbo-blog.github.io/tags/Redux/"/>
-    
-      <category term="Sass" scheme="https://dkbo-blog.github.io/tags/Sass/"/>
     
   </entry>
   
@@ -1046,52 +1080,21 @@ box-sizing: border-box;
       <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
     
     
-      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
-    
       <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
     
+      <category term="Compass" scheme="https://dkbo-blog.github.io/tags/Compass/"/>
+    
       <category term="Gulp" scheme="https://dkbo-blog.github.io/tags/Gulp/"/>
+    
+      <category term="Jade" scheme="https://dkbo-blog.github.io/tags/Jade/"/>
+    
+      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
     
       <category term="Node.js" scheme="https://dkbo-blog.github.io/tags/Node-js/"/>
     
       <category term="Sass" scheme="https://dkbo-blog.github.io/tags/Sass/"/>
     
-      <category term="Compass" scheme="https://dkbo-blog.github.io/tags/Compass/"/>
-    
-      <category term="Jade" scheme="https://dkbo-blog.github.io/tags/Jade/"/>
-    
       <category term="Susy" scheme="https://dkbo-blog.github.io/tags/Susy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用Canvas 實作小畫家</title>
-    <link href="https://dkbo-blog.github.io/2015/07/19/used-canvas-do-painter/"/>
-    <id>https://dkbo-blog.github.io/2015/07/19/used-canvas-do-painter/</id>
-    <published>2015-07-19T03:12:00.000Z</published>
-    <updated>2016-11-20T02:43:08.093Z</updated>
-    
-    <content type="html"><![CDATA[<p>以前從沒有想過會透過寫個塗鴉牆出來，完全沒有概念，但是當DK寫出來後，就恍然大悟了，原來小畫家並不難寫，只是要透過區塊、觸發事件、工具等把圖畫出來，本範例寫的功能是讓你可以用隻筆，在框框範圍內隨心所欲的畫，功能的部分DK只寫了筆頭顏色、筆頭大小、筆頭樣式、清除、存圖。其實已經有一堆網站已經有做出進階的功能了，所以本範例等有閒時間再來加加功能。</p>
-<p><a href="http://dkbo.github.io/canvas-pinter" target="_blank" rel="external">DEMO</a></p>
-<iframe height="600" width="100%" scrolling="no" src="//codepen.io/dkbo/embed/mJKZzv/?height=600&theme-id=4234&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">See the Pen <a href="http://codepen.io/dkbo/pen/mJKZzv/" target="_blank" rel="external">mJKZzv</a> by dkbo (<a href="http://codepen.io/dkbo" target="_blank" rel="external">@dkbo</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.<br></iframe>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;以前從沒有想過會透過寫個塗鴉牆出來，完全沒有概念，但是當DK寫出來後，就恍然大悟了，原來小畫家並不難寫，只是要透過區塊、觸發事件、工具等把圖畫出來，本範例寫的功能是讓你可以用隻筆，在框框範圍內隨心所欲的畫，功能的部分DK只寫了筆頭顏色、筆頭大小、筆頭樣式、清除、存圖。其實已
-    
-    </summary>
-    
-      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
-    
-    
-      <category term="Canvas" scheme="https://dkbo-blog.github.io/tags/Canvas/"/>
-    
-      <category term="HTML5" scheme="https://dkbo-blog.github.io/tags/HTML5/"/>
-    
-      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
-    
-      <category term="畫布" scheme="https://dkbo-blog.github.io/tags/%E7%95%AB%E5%B8%83/"/>
     
   </entry>
   
