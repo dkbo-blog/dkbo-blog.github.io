@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <meta charset="utf-8">
+  
+  <title>DKBO休閒網  | 部落格搬家啦~使用的是Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no" />
+
+  <meta name="description" content="前言好長好長一段沒好好寫心得廢文了 直接開門見山的說吧….. 上一個作品應該是流亡黯道這款遊戲，玩遊戲要厲害除了手感…就是計算了，所以小弟就做了一個計算網頁，POE 弓類傷害計算機，這網頁運用到 React 這種以周期~組件~虛擬DOM 的方式快速開發，但在小弟手中……廢話就不多說了，主要是模仿遊戲的 DPS 計算機制，直接在左邊填入數據後，右方即時操作，並且還加入了存檔及讀取的功能，或是用超連結">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部落格搬家啦~使用的是Hexo">
+<meta property="og:url" content="https://dkbo-blog.github.io/2016/05/02/blog-move/index.html">
+<meta property="og:site_name" content="DKBO休閒網">
+<meta property="og:description" content="前言好長好長一段沒好好寫心得廢文了 直接開門見山的說吧….. 上一個作品應該是流亡黯道這款遊戲，玩遊戲要厲害除了手感…就是計算了，所以小弟就做了一個計算網頁，POE 弓類傷害計算機，這網頁運用到 React 這種以周期~組件~虛擬DOM 的方式快速開發，但在小弟手中……廢話就不多說了，主要是模仿遊戲的 DPS 計算機制，直接在左邊填入數據後，右方即時操作，並且還加入了存檔及讀取的功能，或是用超連結">
+<meta property="og:image" content="https://dkbo-blog.github.io/images/feature/blog-move.jpg">
+<meta property="og:updated_time" content="2016-11-20T02:43:07.859Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="部落格搬家啦~使用的是Hexo">
+<meta name="twitter:description" content="前言好長好長一段沒好好寫心得廢文了 直接開門見山的說吧….. 上一個作品應該是流亡黯道這款遊戲，玩遊戲要厲害除了手感…就是計算了，所以小弟就做了一個計算網頁，POE 弓類傷害計算機，這網頁運用到 React 這種以周期~組件~虛擬DOM 的方式快速開發，但在小弟手中……廢話就不多說了，主要是模仿遊戲的 DPS 計算機制，直接在左邊填入數據後，右方即時操作，並且還加入了存檔及讀取的功能，或是用超連結">
+<meta name="twitter:image" content="https://dkbo-blog.github.io/images/feature/blog-move.jpg">
+
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43399470-4', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+  </head>
+  <body>
+  <div id="wrap"  class="single_body"  >
+  <nav>
+  
+    <div id="singlemenubutton" class="clearfix xx-show s-hide">
+      <a href="/">
+        <i  class="xx-p fa fa-home"></i>
+      </a>
+      <a href="https://www.facebook.com/lu.dkbo">
+        <i  class="xx-p fa fa-facebook"></i>
+      </a>
+      <a href="//codepen.io/dkbo/">
+        <i  class="xx-p fa fa-codepen"></i>
+      </a>
+        <a href="//dkbo.github.io">
+          <i class="xx-p fa fa-github"></i>
+        </a>
+        <i class="xx-p totop fa fa-angle-double-up"></i>
+    </div>
+  
+</nav>
+
+<header class="xx-hide  "></header>
+
+  
+    <div class="container" id="artical-container" style="margin-left:0;">
+  
+      <div class="row" id="single-page">
+  
+
+<aside class="col s4 xx-ng xx-np">
+  <div id="fix" class="x-p m-2p" >
+    <section class="article-author">
+    <div class="col xx12 x3 s12">
+        <div class="contact_show">
+          <img src="https://www.gravatar.com/avatar/d2cddbe46278bf25a41b9479af20cf8d?s=250" alt="">
+        </div>
+        <div class="xx-hide s-show" id="social-icon">
+            <a href="https://www.facebook.com/lu.dkbo">
+                <i id="facebook" class="xx-p fleft fa fa-facebook"></i>
+            </a>
+            <a href="//codepen.io/dkbo">
+                <i id="codepen" class="xx-p fleft fa fa-codepen"></i>
+            </a>
+            <a href="//dkbo.github.io">
+                <i id="github" class="xx-p fleft fa fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col xx12 x9 s12">
+        <p class="author-description xx-ng">
+            小小前端工程師，做出的網頁必定兼容電腦、手機、平板等裝置。會簡單的後端語言連接資料庫能做出簡易的會員系統、訂單管理系統、物流管理系統等等。正朝著網頁美感路線努力中。
+        </p>
+    </div>
+</section>
+
+  </div>
+</aside>
+
+
+    <div class="col s8 xx-np xx-ng" id="single-content">
+        <div id="single_breadcrumb" class="xx-hide s-show">
+            <ul class="breadcrumb xx-hide s-show">
+    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url" title="DKBO休閒網">
+            <span itemprop="title">DKBO休閒網</span></a>
+    </li>
+    
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span class="divider">›</span>
+            <a href="/categories/web-design/" itemprop="url" title='網頁設計'>
+                <span itemprop="title"><a href="/categories/web-design/">網頁設計</a></span>
+            </a>
+        </li>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+            <span class="divider">›</span>
+            <span itemprop="title">
+              部落格搬家啦~使用的是Hexo
+            </span>
+        <li>
+        
+</ul>
+
+        </div>
+        <article class="col xx-12 x-p s-2p">
+            <h1 class="article-title">部落格搬家啦~使用的是Hexo</h1>
+            <div class="article-meta">
+                <span>2016年05月02日</span><span> / </span>
+                <span><a href="/categories/web-design/">網頁設計</a></span><span> / </span>
+                <span>
+                  
+  <a href="/tags/JavaScript/">JavaScript</a>
+  
+    ,
+  
+
+  <a href="/tags/網頁/">網頁</a>
+  
+    ,
+  
+
+  <a href="/tags/Gulp/">Gulp</a>
+  
+    ,
+  
+
+  <a href="/tags/Node-js/">Node.js</a>
+  
+    ,
+  
+
+  <a href="/tags/Sass/">Sass</a>
+  
+    ,
+  
+
+  <a href="/tags/Compass/">Compass</a>
+  
+    ,
+  
+
+  <a href="/tags/Jade/">Jade</a>
+  
+    ,
+  
+
+  <a href="/tags/Susy/">Susy</a>
+  
+
+
+                </span>
+            </div>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>好長好長一段沒好好寫心得<del>廢</del>文了 直接開門見山的說吧….. 上一個作品應該是<strong>流亡黯道</strong>這款遊戲，玩遊戲要厲害除了手感…就是計算了，所以小弟就做了一個計算網頁，<a href="https://dkbo.github.io/poe-calc" target="_blank" rel="external">POE 弓類傷害計算機</a>，這網頁運用到 React 這種以周期~組件~虛擬DOM 的方式快速開發，但在小弟手中……廢話就不多說了，主要是模仿遊戲的 DPS 計算機制，直接在左邊填入數據後，右方即時操作，並且還加入了存檔及讀取的功能，或是用超連結的方式直接看到計算數據，不過後來改版就沒再做更新了!</p>
+<h2 id="搬家構思"><a href="#搬家構思" class="headerlink" title="搬家構思"></a>搬家構思</h2><p>在網站要搬家前其實也做了不少功課，老師當然是G大神。看到了一些不錯的雲端服務。 也當局者迷~到底要不要續用部落格呢?還有要續用網域嗎?</p>
+<p>一段時日後又回去看了以前寫的 <strong>ReactJS</strong> 程式碼，並研究了一下 <strong>Redux</strong>，也發現了 <strong>React-route</strong>，開始有了用靜態網站作部落格的想法，但是想一想不對啊!要是我文章一多，<strong>Webpack</strong> 所產出的 .js 檔案不就超大..，於是又想了 AJAX 的方式，但這樣就要自己做好 JSON 的結構表，正當想放棄時..又想到了用 PHP 直接輸出靜態網頁在上傳，也是不錯的方案。只是以小弟的才能只能寫個很陽春的工具出來。最後自然是上網查了一下<br><mark>靜態部落格</mark>，叮咚..<strong>Hugo</strong>、<strong>Hexo</strong>跑出來啦。</p>
+<h2 id="挫折過程"><a href="#挫折過程" class="headerlink" title="挫折過程"></a>挫折過程</h2><p>一開始先用 <strong>Hugo</strong>，看著教學文章建置了~~很快的靜態網站就出來。只是要怎上傳?要怎修改背景?要怎修改$%$#一概不知，爬了文也花了很多時間。於是就先放棄了。</p>
+<p><strong>Hexo</strong>是用 Node.JS 所建置的，所以也有了興趣去試試看，跟 <strong>Hugo</strong> 一樣都是簡單幾個步驟就可以產出靜態頁面，接下來呢..我一樣不知道怎改主題樣式，一樣不知道!#$#@$@，但有了前次的經驗後，我還是龜毛一點開始研究….ejs、styl、yal…..恩腦中浮出了，這啥….，就這樣惡夢開始了。</p>
+<h3 id="主題樣式"><a href="#主題樣式" class="headerlink" title="主題樣式"></a>主題樣式</h3><p>首先當然是所改主題，改成跟原本部落格一樣，只是要怎改呢?上網找了 Hexo 說明文件，其實就寫了很清楚…如何套用 config 的變數，如何使用 <strong>Layout</strong> 來快速開發模板，如和利用官方預設的 Helper、Tag 等等..又或者自己寫一個 Helper、Tag，如何加入 “”Feature””，以及如何……，這過程中我經歷了不少循環挫折，例如少了符號，或是大小寫這種無厘頭的錯誤。</p>
+<h3 id="佈署到-Github"><a href="#佈署到-Github" class="headerlink" title="佈署到 Github"></a>佈署到 Github</h3><p>老實說…當知道怎佈署後就會覺得之前跟白癡一樣，一開始我是用 <strong>Github Desktop</strong> 直接.. push 上去，又來發現只要在 config 建立好</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> xxx</div><div class="line"><span class="attr">  branch:</span> xxx</div><div class="line"><span class="attr">  message:</span> Uplate</div></pre></td></tr></table></figure>
+<p>之後再到命令列打 deploy –generate 就會自動幫你把靜態文件 Push 到 Github 了，這過程自然是苦不堪言。</p>
+<h3 id="怎用-Sass-來寫主題背景"><a href="#怎用-Sass-來寫主題背景" class="headerlink" title="怎用 Sass 來寫主題背景"></a>怎用 Sass 來寫主題背景</h3><p>原本還要下載 Ruby 等動作來使用 Sass 的，不過還是查了一下發現已經有 Node 的版本了，產出 CSS 速度比以前快太多，只是在之前…我還是不知道怎用，然後開始想辦法移植 susy? compass?，只是還冒出了 postcss，看來是一個不得了的好東西!!，簡單來說就是用 JavaScript 來讀 CSS 並覆寫。詳情等我以後研究再說吧…!</p>
+<h2 id="怎用-Gulp-來控管"><a href="#怎用-Gulp-來控管" class="headerlink" title="怎用 Gulp 來控管"></a>怎用 Gulp 來控管</h2><p>以前都是用 <strong>Gulp</strong> 來執行網頁任務的<del>只是久沒用真的都忘的差不多了，所以只能先參考別人的了</del>，git clone..，哇~~</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//開始本地端伺服器</span></div><div class="line">gulp.task(<span class="string">'server'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">return</span> hexo.call(<span class="string">'server'</span>, &#123;&#125;);</div><div class="line">	&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(err);</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(<span class="string">'deploy'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line"><span class="comment">//佈署靜態文件到遠端伺服器</span></div><div class="line">	hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">return</span> hexo.call(<span class="string">'deploy'</span>, &#123;<span class="attr">generate</span>: <span class="literal">true</span>&#125;);</div><div class="line">	&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(err);</div><div class="line">	&#125;);</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="如何備份開發檔案"><a href="#如何備份開發檔案" class="headerlink" title="如何備份開發檔案"></a>如何備份開發檔案</h2><p>deploy 上去的只有靜態文件檔，但是哪天電腦掛了不就好笑了…，原本小弟是想用Dropbox 來同步的，只是這樣連 node_modules 資料夾 及不需要備份到的資料，都會被同步到，於是查了一下，原來 git 有 .gitignore 這個檔案，只要在裡面建入不需要的檔案名稱就好例如以下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/.deploy_git</div><div class="line"></div><div class="line">/public</div><div class="line"></div><div class="line">node_modules</div></pre></td></tr></table></figure>
+<p>這樣就可以排除靜態文件及 node 模組了。</p>
+<h2 id="後續還需努力"><a href="#後續還需努力" class="headerlink" title="後續還需努力"></a>後續還需努力</h2><p>上方有提到了 <strong>Postcss</strong> 其實小弟還蠻感興趣的…，會再慢慢研究。</p>
+<p>相信前端工程師都會有自己的 CSS Framework，小弟也只能再慢慢的改善。</p>
+<p>目前部落格的搬移工程也只有完成80%。</p>
+<p>這主題只適用於小弟自己，因為很多都寫死的。</p>
+<p>有興趣的可以來小弟的<a href="https://github.com/dkbo-blog/dkbo-blog.github.io/tree/gh-pages" target="_blank" rel="external">備份包</a></p>
+
+            <div class="clearfix"></div>
+            <div class="fb-like" data-href="https://dkbo-blog.github.io/2016/05/02/blog-move/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+        </article>
+        
+        <div id="comments">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES * * */
+                var disqus_shortname = 'dkbo';
+                
+                var disqus_url = 'https://dkbo-blog.github.io/2016/05/02/blog-move/';
+                
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script');
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+        
+    </div>
+</div>
+
+  </div>
+  <footer>
+    <div class="container">
+        <div class="row">
+            <nav class="col s6 m4">
+                <div class="title">最新文章</div>
+                
+<ul class="footlist">
+  
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/12/Css3-3D-Style-Example/" title="Css3 3D Style Example">
+                    Css3 3D Style Exam
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/02/blog-move/" title="部落格搬家啦~使用的是Hexo">
+                    部落格搬家啦~使用
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2016/02/06/next-way/" title="邁入人生下個里程碑~">
+                    邁入人生下個里程碑
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2016/01/20/qk-a-month/" title="車禍後~休養了一個月~">
+                    車禍後~休養了一個
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/10/13/poe-calc/" title="Path of exile(流亡黯道) 傷害計算機">
+                    Path of exile(流亡
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/09/23/learn-math/" title="數學還是要學好比較好~">
+                    數學還是要學好比較
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/09/11/learn-more-not-fast-absorb/" title="學的多，但吸收不太快。">
+                    學的多，但吸收不太
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/02/do-lite-online-game/" title="陽春 Online Game 實作">
+                    陽春 Online Game 
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/01/far-way/" title="後面還有很多路要走~">
+                    後面還有很多路要走
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/08/15/rpg-maker-map-editor/" title="RPG Maker 地圖編輯器">
+                    RPG Maker 地圖編輯
+                </a>
+        </li>
+    
+</ul>
+
+
+            </nav>
+            <nav class="col s6 m4">
+                <div class="title">最新影片</div>
+                
+<ul class="footlist">
+  
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2016/05/09/lance-lu-13/" title="可樂果吃檸檬⊙▽⊙">
+                    可樂果吃檸檬⊙▽⊙
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/07/06/lance-lu-12/" title="這小子開始愛站了">
+                    這小子開始愛站了
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/24/lance-lu-11/" title="睡著的可樂果">
+                    睡著的可樂果
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/20/lance-lu-10/" title="小時候就練臂力了">
+                    小時候就練臂力了
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/17/lance-lu-5/" title="這小子蠻怕癢的麻">
+                    這小子蠻怕癢的麻
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/06/16/married-video/" title="結婚開場影片">
+                    結婚開場影片
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/14/lance-lu-4/" title="可樂果-7m9d-會爬啦">
+                    可樂果-7m9d-會爬啦
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/06/lance-lu-2/" title="可樂果興奮尖叫大笑">
+                    可樂果興奮尖叫大笑
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/05/lance-lu/" title="可樂果7m囉">
+                    可樂果7m囉
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/05/31/lance-lu-0/" title="學爬的前奏？">
+                    學爬的前奏？
+                </a>
+        </li>
+    
+</ul>
+
+
+            </nav>
+            <nav class="col s6 m4">
+                <div class="title">網頁設計</div>
+                
+<ul class="footlist">
+  
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/12/Css3-3D-Style-Example/" title="Css3 3D Style Example">
+                    Css3 3D Style Exam
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/02/blog-move/" title="部落格搬家啦~使用的是Hexo">
+                    部落格搬家啦~使用
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/02/do-lite-online-game/" title="陽春 Online Game 實作">
+                    陽春 Online Game 
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/01/far-way/" title="後面還有很多路要走~">
+                    後面還有很多路要走
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/08/15/rpg-maker-map-editor/" title="RPG Maker 地圖編輯器">
+                    RPG Maker 地圖編輯
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/08/12/web-rpg-resume/" title="Web RPG Resume (實作線上 RPG 履歷)">
+                    Web RPG Resume (實
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/25/css-3d-play/" title="CSS 3D 實在好玩">
+                    CSS 3D 實在好玩
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/24/css-3d-style/" title="CSS3 的 3D 屬性樣式圖">
+                    CSS3 的 3D 屬性樣
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/20/use-gulp/" title="最近著手於 Gulp">
+                    最近著手於 Gulp
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/19/used-canvas-do-painter/" title="利用Canvas 實作小畫家">
+                    利用Canvas 實作小
+                </a>
+        </li>
+    
+</ul>
+
+
+            </nav>
+        </div>
+</footer>
+<div id="copyright">
+    <div class="container">
+        <div class="col x12 s6 xx-center s-left">© 2015 DKBO. All Rights Reserved</div>
+    </div>
+</div>
+
+
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  
+  
+    <script src="/js/signage.js"></script>
+  
+  <script src="/js/index.js"></script>
+</body>
+</html>

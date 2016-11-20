@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DKBO休閒網</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://dkbo-blog.github.io/"/>
+  <updated>2016-11-20T02:43:08.004Z</updated>
+  <id>https://dkbo-blog.github.io/</id>
+  
+  <author>
+    <name>DKBO</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>首頁修改</title>
+    <link href="https://dkbo-blog.github.io/2016/05/14/notice-10/"/>
+    <id>https://dkbo-blog.github.io/2016/05/14/notice-10/</id>
+    <published>2016-05-14T10:03:00.000Z</published>
+    <updated>2016-11-20T02:43:08.004Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.移除家庭擺設，改成可樂果喜愛的哆啦A夢行走動畫。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.移除家庭擺設，改成可樂果喜愛的哆啦A夢行走動畫。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="網站公告" scheme="https://dkbo-blog.github.io/categories/news/"/>
+    
+    
+      <category term="公告" scheme="https://dkbo-blog.github.io/tags/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Css3 3D Style Example</title>
+    <link href="https://dkbo-blog.github.io/2016/05/12/Css3-3D-Style-Example/"/>
+    <id>https://dkbo-blog.github.io/2016/05/12/Css3-3D-Style-Example/</id>
+    <published>2016-05-12T14:36:00.000Z</published>
+    <updated>2016-11-20T02:43:07.840Z</updated>
+    
+    <content type="html"><![CDATA[<style>
+* {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.crmera {
+-moz-perspective: 500px;
+-webkit-perspective: 500px;
+perspective: 500px;
+-moz-perspective-origin: center center;
+-webkit-perspective-origin: center center;
+perspective-origin: center center;
+}
+.crmera .single, .crmera .double {
+position: relative;
+}
+.crmera .single .space, .crmera .double .space {
+-moz-transform-style: perserve-3d;
+-webkit-transform-style: perserve-3d;
+transform-style: perserve-3d;
+border: 1px dashed black;
+-moz-backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-perspective: 1000;
+-webkit-perspective: 1000;
+perspective: 1000;
+}
+.crmera .single .space .box, .crmera .double .space .box {
+cursor: pointer;
+display: inline-block;
+width: 100%;
+height: 100%;
+background: #b0c3ff;
+text-align: center;
+vertical-align: middle;
+-moz-box-shadow: 10px 10px 10px #969494;
+-webkit-box-shadow: 10px 10px 10px #969494;
+box-shadow: 10px 10px 10px #969494;
+-moz-transition: -moz-transform 0.5s;
+-o-transition: -o-transform 0.5s;
+-webkit-transition: -webkit-transform 0.5s;
+transition: transform 0.5s;
+}
+.crmera .single .space .box span, .crmera .double .space .box span {
+position: absolute;
+font-size: 10px;
+top: 50%;
+left: 50%;
+width: 100%;
+margin-left: -50%;
+}
+.crmera .single:nth-child(1) .box {
+-moz-transform: translateX(20px);
+-ms-transform: translateX(20px);
+-webkit-transform: translateX(20px);
+transform: translateX(20px);
+}
+.crmera .single:nth-child(2) .box {
+-moz-transform: translateY(20px);
+-ms-transform: translateY(20px);
+-webkit-transform: translateY(20px);
+transform: translateY(20px);
+}
+.crmera .single:nth-child(3) .box {
+-moz-transform: translateZ(20px);
+-ms-transform: translateZ(20px);
+-webkit-transform: translateZ(20px);
+transform: translateZ(20px);
+}
+.crmera .single:nth-child(4) .box {
+-moz-transform: translate3d(20px, 20px, 20px);
+-ms-transform: translate3d(20px, 20px, 20px);
+-webkit-transform: translate3d(20px, 20px, 20px);
+transform: translate3d(20px, 20px, 20px);
+}
+.crmera .single:nth-child(5) .box {
+-moz-transform: rotateX(20deg);
+-ms-transform: rotateX(20deg);
+-webkit-transform: rotateX(20deg);
+transform: rotateX(20deg);
+}
+.crmera .single:nth-child(6) .box {
+-moz-transform: rotateY(20deg);
+-ms-transform: rotateY(20deg);
+-webkit-transform: rotateY(20deg);
+transform: rotateY(20deg);
+}
+.crmera .single:nth-child(7) .box {
+-moz-transform: rotateZ(20deg);
+-ms-transform: rotateZ(20deg);
+-webkit-transform: rotateZ(20deg);
+transform: rotateZ(20deg);
+}
+.crmera .single:nth-child(8) .box {
+-moz-transform: rotate3d(1, 1, 1, 20deg);
+-ms-transform: rotate3d(1, 1, 1, 20deg);
+-webkit-transform: rotate3d(1, 1, 1, 20deg);
+transform: rotate3d(1, 1, 1, 20deg);
+}
+.crmera .single:nth-child(9) .box {
+-moz-transform: scaleX(1.2);
+-ms-transform: scaleX(1.2);
+-webkit-transform: scaleX(1.2);
+transform: scaleX(1.2);
+}
+.crmera .single:nth-child(10) .box {
+-moz-transform: scaleY(1.2);
+-ms-transform: scaleY(1.2);
+-webkit-transform: scaleY(1.2);
+transform: scaleY(1.2);
+}
+.crmera .single:nth-child(11) .box {
+-moz-transform: scaleZ(1.2);
+-ms-transform: scaleZ(1.2);
+-webkit-transform: scaleZ(1.2);
+transform: scaleZ(1.2);
+}
+.crmera .single:nth-child(12) .box {
+-moz-transform: scale3d(1.2, 1.2, 1.2);
+-ms-transform: scale3d(1.2, 1.2, 1.2);
+-webkit-transform: scale3d(1.2, 1.2, 1.2);
+transform: scale3d(1.2, 1.2, 1.2);
+}
+.crmera .single:hover .box {
+-moz-transform: translate3d(0, 0, 0);
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+.crmera .double:nth-child(1) .box {
+-moz-transform: translateX(20px) rotate3d(1, 1, 1, 90deg);
+-ms-transform: translateX(20px) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: translateX(20px) rotate3d(1, 1, 1, 90deg);
+transform: translateX(20px) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:nth-child(2) .box {
+-moz-transform: translateY(20px) rotate3d(1, 1, 1, 90deg);
+-ms-transform: translateY(20px) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: translateY(20px) rotate3d(1, 1, 1, 90deg);
+transform: translateY(20px) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:nth-child(3) .box {
+-moz-transform: translateZ(20px) rotate3d(1, 1, 1, 90deg);
+-ms-transform: translateZ(20px) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: translateZ(20px) rotate3d(1, 1, 1, 90deg);
+transform: translateZ(20px) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:nth-child(4) .box {
+-moz-transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 90deg);
+-ms-transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 90deg);
+transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:nth-child(5) .box {
+-moz-transform: scaleX(1.2) rotate3d(1, 1, 1, 90deg);
+-ms-transform: scaleX(1.2) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: scaleX(1.2) rotate3d(1, 1, 1, 90deg);
+transform: scaleX(1.2) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:nth-child(6) .box {
+-moz-transform: scaleY(1.2) rotate3d(1, 1, 1, 90deg);
+-ms-transform: scaleY(1.2) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: scaleY(1.2) rotate3d(1, 1, 1, 90deg);
+transform: scaleY(1.2) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:nth-child(7) .box {
+-moz-transform: scaleZ(1.2) rotate3d(1, 1, 1, 90deg);
+-ms-transform: scaleZ(1.2) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: scaleZ(1.2) rotate3d(1, 1, 1, 90deg);
+transform: scaleZ(1.2) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:nth-child(8) .box {
+-moz-transform: scale3d(1.2, 1.2, 1.2) rotate3d(1, 1, 1, 90deg);
+-ms-transform: scale3d(1.2, 1.2, 1.2) rotate3d(1, 1, 1, 90deg);
+-webkit-transform: scale3d(1.2, 1.2, 1.2) rotate3d(1, 1, 1, 90deg);
+transform: scale3d(1.2, 1.2, 1.2) rotate3d(1, 1, 1, 90deg);
+}
+.crmera .double:hover .box {
+-moz-transform: translate3d(0, 0, 0);
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+</style>
+
+<p><div class="row"><br>  <h2 class="xx-p">前言</h2><br>  <p class="xx-p">昨天花了一天把 3D 屬性的使用方法及觀念給弄個大概，後悔以前沒有學好線性代數、立體公式、角度等等..找時間要翻出來在算一算了。現今比較新的瀏覽器雖然支援這些屬性，但是每種瀏覽器看的效果又有一些不同，這絕對是被客戶給否定的。更別說還有很多骨董電腦的存在了!</p><br>  <h2 class="xx-p xx-ng">單一屬性</h2><br>  <p class="xx-p">以下是使用了 translate3d(位移)、rolate3d(旋轉)、scale3d(縮放)的屬性及其單一屬性X、Y、Z，滑鼠移過去可以看到原始位置</p><br>  <div class="crmera clearfix"><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>1.translateX(20px)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>2.translateY(20px)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>3.translateZ(20px)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>4.translate3d(20px,20px,20px)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>5.rotateX(20px)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>6.rotateY(20px)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>7.rotateZ(20px)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>8.rolate3d(1,1,1,45deg)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>9.scaleX(1.2)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>10.scaleY(1.2)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>11.scaleZ(1.2)</span></div><br>      </div><br>    </div><br>    <div class="single col xx6 s3 xx-p"><br>      <div class="space xx-p"><br>        <div class="box"> <span>12.scale3d(1.2,1.2,1.2)</span></div><br>      </div><br>    </div><br>  </div><br>  <h2 class="xx-p xx-ng">雙重屬性(一)</h2><br>  <p class="xx-p">如果運用了兩種不同的屬性呢?效果會變成如何呢?以下幾個 Box 在第一個屬性作用後再追加旋轉 90deg</p><br>  <div class="area clearfix"><br>    <div class="crmera"><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>1.translateX(20px) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>2.translateY(20px) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>3.translateZ(20px) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>4.translate3d(20px,20px,20px) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>5.scaleX(1.2) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>6.scaleY(1.2) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>7.scaleZ(1.2) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>      <div class="double col xx6 s3 xx-p"><br>        <div class="space xx-p"><br>          <div class="box"> <span>8.scale3d(1.2,1.2,1.2) rolate3d(20px,20px,20px,90deg)</span></div><br>        </div><br>      </div><br>    </div><br>  </div><br></div></p>
+<script>
+space = document.getElementsByClassName('space');
+var  init = function () {
+  for(var i = 0; i < space.length; i++ ) {
+    space[i].setAttribute("style","height: "+ space[i].clientWidth+"px;");
+  }
+}
+window.addEventListener('resize',init);
+init();
+</script>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;style&gt;
+* {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.crmera {
+-moz-perspective: 500px;
+-webk
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="3D" scheme="https://dkbo-blog.github.io/tags/3D/"/>
+    
+      <category term="CSS3" scheme="https://dkbo-blog.github.io/tags/CSS3/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>可樂果吃檸檬⊙▽⊙</title>
+    <link href="https://dkbo-blog.github.io/2016/05/09/lance-lu-13/"/>
+    <id>https://dkbo-blog.github.io/2016/05/09/lance-lu-13/</id>
+    <published>2016-05-09T13:09:00.000Z</published>
+    <updated>2016-11-20T02:43:07.936Z</updated>
+    
+    <content type="html"><![CDATA[<div class="video video-16x9"><br>  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fulove1105%2Fvideos%2Fvb.432412180257674%2F561486544016903%2F%3Ftype%3D3&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"><br></iframe><br></div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;video video-16x9&quot;&gt;&lt;br&gt;  &lt;iframe src=&quot;https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fulove1105%
+    
+    </summary>
+    
+      <category term="可樂果" scheme="https://dkbo-blog.github.io/categories/coke/"/>
+    
+    
+      <category term="可樂果" scheme="https://dkbo-blog.github.io/tags/%E5%8F%AF%E6%A8%82%E6%9E%9C/"/>
+    
+      <category term="影片" scheme="https://dkbo-blog.github.io/tags/%E5%BD%B1%E7%89%87/"/>
+    
+      <category term="宇樂" scheme="https://dkbo-blog.github.io/tags/%E5%AE%87%E6%A8%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部落格搬家啦~使用的是Hexo</title>
+    <link href="https://dkbo-blog.github.io/2016/05/02/blog-move/"/>
+    <id>https://dkbo-blog.github.io/2016/05/02/blog-move/</id>
+    <published>2016-05-02T13:23:00.000Z</published>
+    <updated>2016-11-20T02:43:07.859Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>好長好長一段沒好好寫心得<del>廢</del>文了 直接開門見山的說吧….. 上一個作品應該是<strong>流亡黯道</strong>這款遊戲，玩遊戲要厲害除了手感…就是計算了，所以小弟就做了一個計算網頁，<a href="https://dkbo.github.io/poe-calc" target="_blank" rel="external">POE 弓類傷害計算機</a>，這網頁運用到 React 這種以周期~組件~虛擬DOM 的方式快速開發，但在小弟手中……廢話就不多說了，主要是模仿遊戲的 DPS 計算機制，直接在左邊填入數據後，右方即時操作，並且還加入了存檔及讀取的功能，或是用超連結的方式直接看到計算數據，不過後來改版就沒再做更新了!</p>
+<h2 id="搬家構思"><a href="#搬家構思" class="headerlink" title="搬家構思"></a>搬家構思</h2><p>在網站要搬家前其實也做了不少功課，老師當然是G大神。看到了一些不錯的雲端服務。 也當局者迷~到底要不要續用部落格呢?還有要續用網域嗎?</p>
+<p>一段時日後又回去看了以前寫的 <strong>ReactJS</strong> 程式碼，並研究了一下 <strong>Redux</strong>，也發現了 <strong>React-route</strong>，開始有了用靜態網站作部落格的想法，但是想一想不對啊!要是我文章一多，<strong>Webpack</strong> 所產出的 .js 檔案不就超大..，於是又想了 AJAX 的方式，但這樣就要自己做好 JSON 的結構表，正當想放棄時..又想到了用 PHP 直接輸出靜態網頁在上傳，也是不錯的方案。只是以小弟的才能只能寫個很陽春的工具出來。最後自然是上網查了一下<br><mark>靜態部落格</mark>，叮咚..<strong>Hugo</strong>、<strong>Hexo</strong>跑出來啦。</p>
+<h2 id="挫折過程"><a href="#挫折過程" class="headerlink" title="挫折過程"></a>挫折過程</h2><p>一開始先用 <strong>Hugo</strong>，看著教學文章建置了~~很快的靜態網站就出來。只是要怎上傳?要怎修改背景?要怎修改$%$#一概不知，爬了文也花了很多時間。於是就先放棄了。</p>
+<p><strong>Hexo</strong>是用 Node.JS 所建置的，所以也有了興趣去試試看，跟 <strong>Hugo</strong> 一樣都是簡單幾個步驟就可以產出靜態頁面，接下來呢..我一樣不知道怎改主題樣式，一樣不知道!#$#@$@，但有了前次的經驗後，我還是龜毛一點開始研究….ejs、styl、yal…..恩腦中浮出了，這啥….，就這樣惡夢開始了。</p>
+<h3 id="主題樣式"><a href="#主題樣式" class="headerlink" title="主題樣式"></a>主題樣式</h3><p>首先當然是所改主題，改成跟原本部落格一樣，只是要怎改呢?上網找了 Hexo 說明文件，其實就寫了很清楚…如何套用 config 的變數，如何使用 <strong>Layout</strong> 來快速開發模板，如和利用官方預設的 Helper、Tag 等等..又或者自己寫一個 Helper、Tag，如何加入 “”Feature””，以及如何……，這過程中我經歷了不少循環挫折，例如少了符號，或是大小寫這種無厘頭的錯誤。</p>
+<h3 id="佈署到-Github"><a href="#佈署到-Github" class="headerlink" title="佈署到 Github"></a>佈署到 Github</h3><p>老實說…當知道怎佈署後就會覺得之前跟白癡一樣，一開始我是用 <strong>Github Desktop</strong> 直接.. push 上去，又來發現只要在 config 建立好</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> xxx</div><div class="line"><span class="attr">  branch:</span> xxx</div><div class="line"><span class="attr">  message:</span> Uplate</div></pre></td></tr></table></figure>
+<p>之後再到命令列打 deploy –generate 就會自動幫你把靜態文件 Push 到 Github 了，這過程自然是苦不堪言。</p>
+<h3 id="怎用-Sass-來寫主題背景"><a href="#怎用-Sass-來寫主題背景" class="headerlink" title="怎用 Sass 來寫主題背景"></a>怎用 Sass 來寫主題背景</h3><p>原本還要下載 Ruby 等動作來使用 Sass 的，不過還是查了一下發現已經有 Node 的版本了，產出 CSS 速度比以前快太多，只是在之前…我還是不知道怎用，然後開始想辦法移植 susy? compass?，只是還冒出了 postcss，看來是一個不得了的好東西!!，簡單來說就是用 JavaScript 來讀 CSS 並覆寫。詳情等我以後研究再說吧…!</p>
+<h2 id="怎用-Gulp-來控管"><a href="#怎用-Gulp-來控管" class="headerlink" title="怎用 Gulp 來控管"></a>怎用 Gulp 來控管</h2><p>以前都是用 <strong>Gulp</strong> 來執行網頁任務的<del>只是久沒用真的都忘的差不多了，所以只能先參考別人的了</del>，git clone..，哇~~</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//開始本地端伺服器</span></div><div class="line">gulp.task(<span class="string">'server'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">return</span> hexo.call(<span class="string">'server'</span>, &#123;&#125;);</div><div class="line">	&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(err);</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(<span class="string">'deploy'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line"><span class="comment">//佈署靜態文件到遠端伺服器</span></div><div class="line">	hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">return</span> hexo.call(<span class="string">'deploy'</span>, &#123;<span class="attr">generate</span>: <span class="literal">true</span>&#125;);</div><div class="line">	&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(err);</div><div class="line">	&#125;);</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="如何備份開發檔案"><a href="#如何備份開發檔案" class="headerlink" title="如何備份開發檔案"></a>如何備份開發檔案</h2><p>deploy 上去的只有靜態文件檔，但是哪天電腦掛了不就好笑了…，原本小弟是想用Dropbox 來同步的，只是這樣連 node_modules 資料夾 及不需要備份到的資料，都會被同步到，於是查了一下，原來 git 有 .gitignore 這個檔案，只要在裡面建入不需要的檔案名稱就好例如以下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">/.deploy_git</div><div class="line"></div><div class="line">/public</div><div class="line"></div><div class="line">node_modules</div></pre></td></tr></table></figure>
+<p>這樣就可以排除靜態文件及 node 模組了。</p>
+<h2 id="後續還需努力"><a href="#後續還需努力" class="headerlink" title="後續還需努力"></a>後續還需努力</h2><p>上方有提到了 <strong>Postcss</strong> 其實小弟還蠻感興趣的…，會再慢慢研究。</p>
+<p>相信前端工程師都會有自己的 CSS Framework，小弟也只能再慢慢的改善。</p>
+<p>目前部落格的搬移工程也只有完成80%。</p>
+<p>這主題只適用於小弟自己，因為很多都寫死的。</p>
+<p>有興趣的可以來小弟的<a href="https://github.com/dkbo-blog/dkbo-blog.github.io/tree/gh-pages" target="_blank" rel="external">備份包</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;好長好長一段沒好好寫心得&lt;del&gt;廢&lt;/del&gt;文了 直接開門見山的說吧….. 上一個作品應該是&lt;strong&gt;流亡黯道&lt;/strong&gt;這
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="Gulp" scheme="https://dkbo-blog.github.io/tags/Gulp/"/>
+    
+      <category term="Node.js" scheme="https://dkbo-blog.github.io/tags/Node-js/"/>
+    
+      <category term="Sass" scheme="https://dkbo-blog.github.io/tags/Sass/"/>
+    
+      <category term="Compass" scheme="https://dkbo-blog.github.io/tags/Compass/"/>
+    
+      <category term="Jade" scheme="https://dkbo-blog.github.io/tags/Jade/"/>
+    
+      <category term="Susy" scheme="https://dkbo-blog.github.io/tags/Susy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部落格大工程轉移</title>
+    <link href="https://dkbo-blog.github.io/2016/05/02/notice-9/"/>
+    <id>https://dkbo-blog.github.io/2016/05/02/notice-9/</id>
+    <published>2016-05-02T12:58:00.000Z</published>
+    <updated>2016-11-20T02:43:08.040Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.CMS 從 <mark>WordPress</mark> 改成 <mark>Hexo</mark><br>2.網站空間 從 <mark>Hostmonster</mark> 改成 <mark>Github</mark><br>3.移除 <strong>熱門文章</strong> 暫時不知道怎統計人氣<br>4.室內設計元件更新</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.CMS 從 &lt;mark&gt;WordPress&lt;/mark&gt; 改成 &lt;mark&gt;Hexo&lt;/mark&gt;&lt;br&gt;2.網站空間 從 &lt;mark&gt;Hostmonster&lt;/mark&gt; 改成 &lt;mark&gt;Github&lt;/mark&gt;&lt;br&gt;3.移除 &lt;strong&gt;熱門文章&lt;/str
+    
+    </summary>
+    
+      <category term="網站公告" scheme="https://dkbo-blog.github.io/categories/news/"/>
+    
+    
+      <category term="公告" scheme="https://dkbo-blog.github.io/tags/%E5%85%AC%E5%91%8A/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="Hexo" scheme="https://dkbo-blog.github.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="https://dkbo-blog.github.io/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>邁入人生下個里程碑~</title>
+    <link href="https://dkbo-blog.github.io/2016/02/06/next-way/"/>
+    <id>https://dkbo-blog.github.io/2016/02/06/next-way/</id>
+    <published>2016-02-06T07:16:00.000Z</published>
+    <updated>2016-11-20T02:43:07.992Z</updated>
+    
+    <content type="html"><![CDATA[<p>就在昨天闊別了~待3年多的公司~越接近下班時，越是有些感觸</p>
+<p>剛進公司的時候~我還只有25歲~工作環境非常的自由~</p>
+<p>因為沒有任何人可以帶我~如何寫網頁~如何用美工軟體</p>
+<p>回想一下~當初雖沒有很努力的學習關於網頁的相關知識</p>
+<p>一碰到有興趣的工具時，就會自動學習~一步步的吸收</p>
+<p>一步步的加深對網頁的興致~造就今日的我</p>
+<p>雖然自知自己有待加強的地方還很多</p>
+<p>有時也會覺得學習無止盡感到疲乏</p>
+<p>就會想找些遊戲來放鬆</p>
+<p>但是自己有個萬年不變的缺點</p>
+<p>只要碰到有興趣的東西都會著迷很難自拔</p>
+<p>這三年期間~就有很多次這樣的狀況發生</p>
+<p>玩遊戲~一玩重心自然就會好幾個月擺在遊戲上</p>
+<p>Path Of Exiles 或是 劍靈 …..</p>
+<p>光這兩款就浪費了1年時間吧!</p>
+<p>以上扯遠了…….</p>
+<p>從未婚到已婚到有小孩~~</p>
+<p>工作經驗從無到有</p>
+<p>說明會、公益活動、搬公司</p>
+<p>人事方面~同事間吵架~跟老闆吵架~慶生..</p>
+<p>好壞都有的一些經歷</p>
+<p>不知道未來的工作會如何的發酵</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;就在昨天闊別了~待3年多的公司~越接近下班時，越是有些感觸&lt;/p&gt;
+&lt;p&gt;剛進公司的時候~我還只有25歲~工作環境非常的自由~&lt;/p&gt;
+&lt;p&gt;因為沒有任何人可以帶我~如何寫網頁~如何用美工軟體&lt;/p&gt;
+&lt;p&gt;回想一下~當初雖沒有很努力的學習關於網頁的相關知識&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>車禍後~休養了一個月~</title>
+    <link href="https://dkbo-blog.github.io/2016/01/20/qk-a-month/"/>
+    <id>https://dkbo-blog.github.io/2016/01/20/qk-a-month/</id>
+    <published>2016-01-20T07:30:00.000Z</published>
+    <updated>2016-11-20T02:43:08.058Z</updated>
+    
+    <content type="html"><![CDATA[<p>回憶起當時的情況</p>
+<p>一輩子都忘不了吧!</p>
+<hr>
+
+<p>那天是爸爸的生日聚餐</p>
+<p>正要出門時</p>
+<p>天空就開始不作美</p>
+<p>看了下時間~快遲到了</p>
+<p>於是騎車時也比較專注</p>
+<p>騎沒多久<del>就看到老年人</del>想要闖紅燈過去</p>
+<p>當場就按喇叭示警~繼續直行</p>
+<p>一小段距離後就有了岔路</p>
+<p>前面有台騎比較慢的車在內車道</p>
+<p>本來好好的要超車過去</p>
+<p>沒想到前面這台機車</p>
+<p>連後方有無機車都不看一眼</p>
+<p>就直接從內車道斜騎轉至左方的岔路</p>
+<p>後來就是直接撞到了</p>
+<p>滑行了一段距離</p>
+<p>說誰對誰錯</p>
+<p>在我的角度當然是對方的錯</p>
+<p>妥若那時我開汽車</p>
+<p>那事情就更嚴重了</p>
+<p>一台機車騎很慢</p>
+<p>結果要另一台機車要超車時</p>
+<p>前方的機車卻給你斜騎轉至左方岔路</p>
+<p>誰受的了</p>
+<p>就算是兩台腳踏車也必撞的</p>
+<p>然怪交通糾紛會這麼多</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;回憶起當時的情況&lt;/p&gt;
+&lt;p&gt;一輩子都忘不了吧!&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;那天是爸爸的生日聚餐&lt;/p&gt;
+&lt;p&gt;正要出門時&lt;/p&gt;
+&lt;p&gt;天空就開始不作美&lt;/p&gt;
+&lt;p&gt;看了下時間~快遲到了&lt;/p&gt;
+&lt;p&gt;於是騎車時也比較專注&lt;/p&gt;
+&lt;p&gt;騎沒多久&lt;del&gt;就看到老年人
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Path of exile(流亡黯道) 傷害計算機</title>
+    <link href="https://dkbo-blog.github.io/2015/10/13/poe-calc/"/>
+    <id>https://dkbo-blog.github.io/2015/10/13/poe-calc/</id>
+    <published>2015-10-13T02:12:00.000Z</published>
+    <updated>2016-11-20T02:43:08.053Z</updated>
+    
+    <content type="html"><![CDATA[<p>透過遊戲內部的資訊~並做成一個簡單的工具~</p>
+<p>POE 是一個數學比例很重的遊戲~不用複雜的計算，只需要熟悉的加減乘除即可。</p>
+<p>藉此機會~做了一種用很多框框填數值的計算網頁，似乎用 AngularJS 會比較容易做?</p>
+<p>不過我對於 AngularJs 還不太熟悉~ 所以用了 ReactJS 來實踐看看。</p>
+<p>如果單純用 Jquery 應該會做到吐血@@</p>
+<p><a href="http://dkbo.github.io/poe-calc" target="_blank" rel="external">計算機的網址</a></p>
+<p>一開始是先透過試算表算出最符合 POE 的公式，但後來心血來潮加上試算表只有自己看得懂XD</p>
+<p>所以又寫了個網站，用散列的方式直接寫!!!</p>
+<p>本來想寫類似遊戲模組畫面直接拖放即可計算數值。</p>
+<p>分析給有緣人拖放的製作方式</p>
+<p><strong>人物</strong><br>如果要完美一點，只需要填等級及角色種類(紅綠藍球)。力敏智血法護盾可直接算出。</p>
+<p><strong>天賦</strong><br>直接做成天賦模擬器的模器即可，珠寶的部分可另外選填數據。</p>
+<p><strong>裝備</strong><br>透過遊戲內部 Ctrl + C 的方式，再到網頁Ctrl + V 程式過濾後即可知道數值。</p>
+<p><strong>珠寶</strong><br>要讓使用者方便使用的話，建置珠寶的數據資料庫，以選取的方式即可</p>
+<p>如果要再貼近於遊戲介面</p>
+<p>那就做的類似 POE 論壇一樣可以內部看裝備的系統</p>
+<p>只是這些道具的圖示資料要大量的儲存</p>
+<p>但在建置方面就需要相當多的時間</p>
+<p>現階段來說~只要結合各現成的工具</p>
+<p>即可實作出 POE 仿遊戲模擬器</p>
+<hr>
+
+<p>網頁即是程式~~</p>
+<p>只是呈現的方式不同~~</p>
+<p>只需要簡單的一段網址~~</p>
+<p>網頁可以結合大眾所需要的東西~~</p>
+<p>結合自己的興趣~~何樂而不為</p>
+<p><hr><br>這次利用純前端的方式，儲存數據並讀取數據，在製作過程中遇到了一些問題!</p>
+<p>1.我把其他變數 設定成 state 時，連 init 變數都會跟著變，最後解決不了我直接用 location.reload 了。<br>2.透過網址列的方式!把 JSON 直接套上~網址會過長，於是最近要找個編碼方式。<br>3.管理這麼多的框格，還沒想到怎用函式的方式去寫。不然 JS 檔案過大</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;透過遊戲內部的資訊~並做成一個簡單的工具~&lt;/p&gt;
+&lt;p&gt;POE 是一個數學比例很重的遊戲~不用複雜的計算，只需要熟悉的加減乘除即可。&lt;/p&gt;
+&lt;p&gt;藉此機會~做了一種用很多框框填數值的計算網頁，似乎用 AngularJS 會比較容易做?&lt;/p&gt;
+&lt;p&gt;不過我對於 Angu
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+      <category term="React" scheme="https://dkbo-blog.github.io/tags/React/"/>
+    
+      <category term="Path Of Exile" scheme="https://dkbo-blog.github.io/tags/Path-Of-Exile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>數學還是要學好比較好~</title>
+    <link href="https://dkbo-blog.github.io/2015/09/23/learn-math/"/>
+    <id>https://dkbo-blog.github.io/2015/09/23/learn-math/</id>
+    <published>2015-09-23T09:41:00.000Z</published>
+    <updated>2016-11-20T02:43:07.979Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近有感而發啊!</p>
+<p>如果要寫程式</p>
+<p>數學~可以幫助很多動態效果的運算、優化</p>
+<p>至於動態的部分~小則簡單的轉換~大則內部的複雜計算!</p>
+<p>真心佩服暗黑破壞神2 ~ 真的是很複雜的公式啊!</p>
+<p>3D 就扯到三角函數啦 ~ 正弦、餘弦 為了這個我還特地去看了一下數學網站…</p>
+<p>做出了一個 <a href="http://codepen.io/dkbo/full/pjgYVR" target="_blank" rel="external"> 3D網頁</a> XD</p>
+<p>好在從小數學邏輯比較好 ~ 還可以應付一些小型的數學應算~</p>
+<p>在某些部分透過數學~會有很多優點</p>
+<p>換個方式說 ~ 再決定要做一件事情時</p>
+<p>都會先想想利害關西吧!(Yes or No)</p>
+<p>但數學也並非無缺點~~</p>
+<p>應該說透過數學雖然可以大幅地降低一些開發時間及成本!</p>
+<p>但是越複雜的事情就越容易出錯!</p>
+<p>計算錯誤可能導致大幅度的損失!</p>
+<p>1.每天騎車</p>
+<p>騎久了對於紅綠燈的秒速可能都有概念了!這時候就會知道哪時要左轉、右轉，少掉停紅綠燈的時間。</p>
+<p>但是有時人算不如紅綠燈算!就得多等 2 次紅燈吧!(待轉區)</p>
+<p>如果好死不死直接綠燈衝左轉~~贛怎有警察。</p>
+<p>不僅被扣一段時間，連同金錢也賠一些。</p>
+<p>(以上是我的經歷不過我都停待轉區)</p>
+<p>2.</p>
+<p>搬東西~講求效率~所以一次搬多一點，可以減少趟數。</p>
+<p>很勇猛的一次搬個四箱尿布 只需要一趟就好了!!</p>
+<p>結果中途還掉下來幾次~走路也比較緩慢!!</p>
+<p>一不小心還會撞到人。</p>
+<p>天殺啊!</p>
+<p>所以重點是甚麼呢?</p>
+<p>請計算好四周環境、行走距離來評估吧!</p>
+<p>畢竟有時候也有風險!!</p>
+<p>3.</p>
+<p>EXCEL 試算表計算</p>
+<p>現在報表都非常方便</p>
+<p>在某些儲存格填一下即可</p>
+<p>也因為如此~</p>
+<p>如果在計算公式中的某一項目出錯</p>
+<p>就會是很嚴重的問題啦!</p>
+<p>4.</p>
+<p>股票因素真的太多了</p>
+<p>先不管新聞、風聲、炒作的外在因素</p>
+<p>內部因素就夠好玩啦</p>
+<p>漲跌幅 ? 小 Case</p>
+<p>除權息? 小 Case</p>
+<p>這人與人的戰爭，抑或是自己的戰爭</p>
+<p>還有著莫大的風險</p>
+<p>哪天台灣被炸了!</p>
+<p>保證沒有一張股票賣得出去</p>
+<p>恩….當我亂說杯</p>
+<p>老句話~簡單來說~就是風險管理控管好</p>
+<p>別聽別人說的</p>
+<p>因為別人操作的公式 早就很清楚啦!</p>
+<p>縱容是想幫助人不收錢!</p>
+<p>也就當作參考即可!</p>
+<p>何時要賣他人說的簡單</p>
+<p>自己就要臨戰經驗啦!</p>
+<p>所以才有人說</p>
+<p>買定存股就好</p>
+<p>物極必反</p>
+<p>底至頂 頂落底</p>
+<p>這是亙古至今不變的定律</p>
+<p>5.</p>
+<p>其實說來很奇怪</p>
+<p>有些女生明明數學很差</p>
+<p>就對食物熱量計算特別優秀</p>
+<p>為了維持身材 ~ 就下了很大的功夫</p>
+<p>所以說在通常情況下</p>
+<p>沒有不好的 ~ 只有不努力的</p>
+<p>我想這句話也說得過去了</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近有感而發啊!&lt;/p&gt;
+&lt;p&gt;如果要寫程式&lt;/p&gt;
+&lt;p&gt;數學~可以幫助很多動態效果的運算、優化&lt;/p&gt;
+&lt;p&gt;至於動態的部分~小則簡單的轉換~大則內部的複雜計算!&lt;/p&gt;
+&lt;p&gt;真心佩服暗黑破壞神2 ~ 真的是很複雜的公式啊!&lt;/p&gt;
+&lt;p&gt;3D 就扯到三角函數啦 ~ 
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>學的多，但吸收不太快。</title>
+    <link href="https://dkbo-blog.github.io/2015/09/11/learn-more-not-fast-absorb/"/>
+    <id>https://dkbo-blog.github.io/2015/09/11/learn-more-not-fast-absorb/</id>
+    <published>2015-09-11T08:28:00.000Z</published>
+    <updated>2016-11-20T02:43:07.983Z</updated>
+    
+    <content type="html"><![CDATA[<p>如今比之前，又已經不同 level 了。</p>
+<p>回頭一看，只需要簡簡單單寫 CSS HTML JS。</p>
+<p>HTML 只需知道如何架構 HTML DOM 及 Tag 順序就可以。</p>
+<p>CSS 只需要了解屬性用法，並搭配出理想的版型。</p>
+<p>JS 只需要傳送或接收資料流，動態處理 DOM。</p>
+<p>以上就算不用 JS 也可以造出美美的網站出來，可如今時代不同了，學的多才知道自己 level 有多 low。</p>
+<p>有太多的工具混亂了前端。</p>
+<p>相信每個前端所興趣的都有所不同。</p>
+<p>有些人僅僅只是想架個網站。</p>
+<p>有些人喜歡動畫、遊戲。</p>
+<p>有些人喜歡監控性質。</p>
+<p>有些人喜歡做產生器之類的。</p>
+<p>還有很多我想不到了。</p>
+<p>以現今的發展程度，前端的程度都可以辦到，只是要專精哪方面呢!</p>
+<p>好運點還是要看公司吧!</p>
+<hr>
+
+<p>來講講程式吧!</p>
+<p>現在或未來主流 ECMAScript 6 7? 提供了更簡易的寫法。先不提其他好用的功能，解構 及 箭頭就非常方便了。</p>
+<p>但是瀏覽器不支援怎辦? 以 let 這個宣告變數的方式，也要 IE11 才支援。解決的方法呢? Babel 就可以轉啦!</p>
+<p>只是 ECMAScript 5 又只支援 IE9 以上，對於 IE 8以下怎辦? 說服業主吧! 現在用 IE8 以下的已經不多啦!</p>
+<p>況且天殺的 MicroSoft 似乎推出新瀏覽器 Spartan， IE 也總算要慢慢淘汰了吧! 雖然後期 IE 似乎比較好了。</p>
+<p>這陣子也慢慢把一些語法改成 ECMAScript 6 反正 Babel 能轉不用擔心!等到以後伺服器都支援了!就無痛移植了。</p>
+<hr>
+
+<p>來聊聊如何讓 F2E 輕易 變成軟體工程師吧?</p>
+<p>Node.js</p>
+<p>有了 Node.js 基本上就不用侷限在網頁的架設部份了，是已經可以拓展到雲端可及的部分。</p>
+<p>只要 Ping 的到對應到的 Server 端又支援了相關的 Protocal 就可以做出一些事情了。</p>
+<p>讓人明白一點的講法就是可以遠端的控制或是接收資料，如衛星定位、攝影機影像、無線遙控。</p>
+<p>現在 3G 、 4G 、 Wifi .. 已經非常發達了。 要建立一個 Localhost 也很容易。</p>
+<p>也許該說 Node.js 讓 網頁前端工程師有機會轉行成軟體工程師。</p>
+<hr>
+
+<p>Webpack</p>
+<p>這是 Node.js 的程式模塊包裝工具，這幾天試了一下，我查了很多文，老實說現在還是不太懂，雖然如今知道怎用來包裝 JS CSS 了。</p>
+<p>用有趣的方式來打個比方，有一對雙胞胎，他們一模一樣，但有哥哥有戴眼鏡，弟弟則有戴手錶。</p>
+<pre>/* ES6 哥哥的模塊需要 */
+ import Body from './body';
+ import Glasses from './glasses';
+</pre>
+
+
+<pre>/* ES6 弟弟的模塊需要 */
+ import Body from './body';
+ import Watch from './watch';
+</pre>
+
+<p>然後就可以利用打包工具來包裝，這在模塊利用率高的專案下，想必非常有幫助，但是呢!僅僅只是做個網頁的話，就不用學啦!</p>
+<hr>
+
+<p>Gulp.js</p>
+<p>這也是 Node.js 的指派任務工具。對於寫寫網站的人來說，這是個非常親民且方便的工具，利用這工具再搭配文件編輯器，可以節省非常多的時間在於網站切版及動態程式撰寫。</p>
+<p>這類型的工具已經是寫網頁不可或缺的利器了。</p>
+<hr>
+
+<p>Redux</p>
+<p>一個月前開始學 React.js 有間接的知道了 Flux 的訊息。</p>
+<p>store、dispatch、action</p>
+<p>這三組概念，說真的一開始我真的完全看不懂，雖然網站教學都說很簡單、很容易、一小時學會等!。</p>
+<p>可能我資質太過愚鈍了吧!</p>
+<p>後來才知道我又跳級升等了。</p>
+<p>相當初跟 大呆達 常常跳級升等，死了不扣經驗，練得比較快。</p>
+<p>於是我就如法炮製繼續的學。</p>
+<p>自從學了ES6之後才知道， Redux 有很多教學文都有 ES6 語法參雜其中。</p>
+<p>甚至都用到 Node.js 去 require 。我壓根看不懂是怎來的 XD。</p>
+<p>身為網頁工程師該慚愧的面對這些。<del>在我越級升等死了一萬次之後</del></p>
+<p>才知道所謂的如今前端工程師 !== 網頁工程師!</p>
+<p>等級 level 差太多太多嚕!</p>
+<p>該慶幸的是…我多了一項不怕沒工作的技能。</p>
+<p>其實也不知道是不是該說一項…畢竟前端涉獵太深。</p>
+<p>你懂得我不一定懂，而我懂得你可能也不見得懂。</p>
+<hr>
+
+<p>現在就是要知道往哪方面發展。</p>
+<p>視覺效果類、遠端 IO 控制類、前端程式設計類。</p>
+<p>畢竟基底要打穩才有辦法再往外擴增。</p>
+<p>以下算是我自認為我必須要加強的項目</p>
+<p>ECMAScript</p>
+<p>正在學啊!</p>
+<p>CSS3</p>
+<p>clip-path、Colume、Flex …等相關屬性，雖然都有碰觸過，但還是不熟，都怪 IE 害大部分的網站都不用這些屬性。</p>
+<p>聽說 Bootstrap 4 多了 Flex 的方案，但總不能依賴這些 Framework 吧!</p>
+<p>懂得原理才有辦法衍生出更多的樣式出來!</p>
+<p>HTML5</p>
+<p>Canvas 、 Websocket 、 Speech 、 Geolocation …等等等。</p>
+<p>這些在做網頁基本上是不會去碰到的。但如果真的碰到了就要花時間去想辦法串接到。</p>
+<p>本章的重點，也不知道是在講甚麼。就當是想到甚麼就打甚麼來抒發一下。<br>-</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如今比之前，又已經不同 level 了。&lt;/p&gt;
+&lt;p&gt;回頭一看，只需要簡簡單單寫 CSS HTML JS。&lt;/p&gt;
+&lt;p&gt;HTML 只需知道如何架構 HTML DOM 及 Tag 順序就可以。&lt;/p&gt;
+&lt;p&gt;CSS 只需要了解屬性用法，並搭配出理想的版型。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+      <category term="CSS3" scheme="https://dkbo-blog.github.io/tags/CSS3/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="HTML" scheme="https://dkbo-blog.github.io/tags/HTML/"/>
+    
+      <category term="canvas" scheme="https://dkbo-blog.github.io/tags/canvas/"/>
+    
+      <category term="ECMAScript 6" scheme="https://dkbo-blog.github.io/tags/ECMAScript-6/"/>
+    
+      <category term="es6" scheme="https://dkbo-blog.github.io/tags/es6/"/>
+    
+      <category term="Gulp" scheme="https://dkbo-blog.github.io/tags/Gulp/"/>
+    
+      <category term="Node.js" scheme="https://dkbo-blog.github.io/tags/Node-js/"/>
+    
+      <category term="Redux" scheme="https://dkbo-blog.github.io/tags/Redux/"/>
+    
+      <category term="Sass" scheme="https://dkbo-blog.github.io/tags/Sass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>陽春 Online Game 實作</title>
+    <link href="https://dkbo-blog.github.io/2015/09/02/do-lite-online-game/"/>
+    <id>https://dkbo-blog.github.io/2015/09/02/do-lite-online-game/</id>
+    <published>2015-09-02T08:28:00.000Z</published>
+    <updated>2016-11-20T02:43:07.887Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://dkbo-rpg-online.herokuapp.com" target="_blank" rel="external">Online 網址</a></p>
+<p>使用 Socket.io 及 Node.js 把原先的 RPG 網頁改成 online 多人互動的網頁</p>
+<p>Server 端是架設在 heroku 的雲端上，缺點是美國連線速度比較慢。</p>
+<p>這次 online 花最多時間在於 express 的 express.static，花了3/4的時間就是在找它，誰叫我英文爛呢。</p>
+<p>在內容部分沒有做優化，只是把一些雙向溝通的程式加上去而已，有時後進去還會殘留人物在裡面，不過既然知道怎做了</p>
+<p>就不用擔心了，<del>所以這網頁應該會擺到爛掉</del></p>
+<p>之後可能要先來慢慢修改原先單機的程式碼。</p>
+<p>因為寫的太亂了</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://dkbo-rpg-online.herokuapp.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Online 網址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用 Socket.io 及 Node.js 把原先的 RPG 網頁改成 o
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="socket.io" scheme="https://dkbo-blog.github.io/tags/socket-io/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>後面還有很多路要走~</title>
+    <link href="https://dkbo-blog.github.io/2015/09/01/far-way/"/>
+    <id>https://dkbo-blog.github.io/2015/09/01/far-way/</id>
+    <published>2015-09-01T07:32:00.000Z</published>
+    <updated>2016-11-20T02:43:07.892Z</updated>
+    
+    <content type="html"><![CDATA[<p>從無到有過程中，在旁人眼裡就只是盯著螢幕敲鍵盤，但在我的眼中，卻有無數的IF ELSE ，講白一點就是此路通不通，好在在電腦世界裡頭，死個千千萬萬次，還是可以繼續試。以前看來很複雜的文件，現在看卻是覺得很容易。這就是所謂的升等打怪不痛了。</p>
+<p>最近試著寫的 RPG 網頁，本來只是透過大量的 DIV 構造場景，但大量 DIV 下場就是吃很多的效能，在電腦也許感受不到，行動裝置就非常明顯，雖然也是做得出來。後來就轉換到用畫布的方式，一張圖就好過整個 DIV 了吧!透過畫好的圖，再用 CSS 造成位移。在這裡有個問題點就是!我並不清楚 Canvas 一直畫造成位移效果的效能比較好，還是畫好一整個畫面在用 CSS 的 translate3D 來位移的效能比較好，哪種效能比較優呢? 並沒有花時間去做測試。</p>
+<p>以前因老闆有需求，做一個即時聊天的功能網頁。那時我就有查一些資訊，Socket.io ，但那時我壓根看不懂怎去使用這玩樣兒。現在呢!突然有個 Online Game 的想法在，又查到了 Socket.io，這次查就跟以前不同啦!程式碼看得懂 XD 。 然後試一下 把 JSON 資訊利用Console.log 顯示在各 Clinet 端，恩莫名的成就來了。透過 JSON 只要想好 Server 端所具備的資料，及要呈現在 Client 端的資訊，很多互動的工具就可以做出來了!</p>
+<p>最近也終於到達門檻可以學習 Node.js 了，ES6 就在等等吧! angular 2.0 再看看吧!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;從無到有過程中，在旁人眼裡就只是盯著螢幕敲鍵盤，但在我的眼中，卻有無數的IF ELSE ，講白一點就是此路通不通，好在在電腦世界裡頭，死個千千萬萬次，還是可以繼續試。以前看來很複雜的文件，現在看卻是覺得很容易。這就是所謂的升等打怪不痛了。&lt;/p&gt;
+&lt;p&gt;最近試著寫的 RPG
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RPG Maker 地圖編輯器</title>
+    <link href="https://dkbo-blog.github.io/2015/08/15/rpg-maker-map-editor/"/>
+    <id>https://dkbo-blog.github.io/2015/08/15/rpg-maker-map-editor/</id>
+    <published>2015-08-15T13:38:00.000Z</published>
+    <updated>2016-11-20T02:43:08.062Z</updated>
+    
+    <content type="html"><![CDATA[<p>利用禮拜六一整天的時間做了個簡易的地圖編輯器<br>熱鍵</p>
+<p>(地圖區)</p>
+<ol>
+<li><p>w、s、a、d 及方向鍵 控制地圖位移動</p>
+</li>
+<li><p>g 地圖格線切換</p>
+</li>
+<li><p>f 前層物件視圖 顯示/隱藏</p>
+</li>
+</ol>
+<p>4  b 後層物件視圖 顯示/隱藏</p>
+<p>5  滑鼠左鍵 畫物件至後層</p>
+<p>6  滑鼠右鍵 畫物件至前層</p>
+<p>備註 如果要清除地圖所有物件 可以直接在右上角的文字區塊鍵入 [ ] ，或是重新讀取。還有這編輯器不好用請當作玩玩就好!</p>
+<p>(圖庫區)</p>
+<p>1.滑鼠滾輪  圖庫上下位移</p>
+<p>2.滑鼠左鍵 選取要繪製的圖庫區塊</p>
+<p>3.滑鼠右鍵 取消選取</p>
+<p>(上方文字區塊)</p>
+<p>左方 為 物件存取為 JSON</p>
+<p>右方 為讀取 JSON 並繪製</p>
+<p>簡單來說就是繪製好的地圖就要保存好左方的Code</p>
+<p>以後要利用就在貼到右邊馬上會把之前繪製好的復原</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;利用禮拜六一整天的時間做了個簡易的地圖編輯器&lt;br&gt;熱鍵&lt;/p&gt;
+&lt;p&gt;(地圖區)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;w、s、a、d 及方向鍵 控制地圖位移動&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;g 地圖格線切換&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;f 前層物件視圖 顯示/隱藏&lt;
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="canvas" scheme="https://dkbo-blog.github.io/tags/canvas/"/>
+    
+      <category term="React" scheme="https://dkbo-blog.github.io/tags/React/"/>
+    
+      <category term="RPG" scheme="https://dkbo-blog.github.io/tags/RPG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web RPG Resume (實作線上 RPG 履歷)</title>
+    <link href="https://dkbo-blog.github.io/2015/08/12/web-rpg-resume/"/>
+    <id>https://dkbo-blog.github.io/2015/08/12/web-rpg-resume/</id>
+    <published>2015-08-12T12:52:00.000Z</published>
+    <updated>2016-11-20T02:43:08.102Z</updated>
+    
+    <content type="html"><![CDATA[<p>Web RPG 履歷表、透過從以前到現在都流行的 RPG Marker(RPG 製作大師)所擁有的風格，並在網頁上呈現，實作過程中比想像中的容易，這裡不討論也不張貼程式碼，因為 DK 寫的也沒多漂亮。DK 已經把履歷已經放在 GitHub 了。如果不怕傷眼睛的話可以看看。</p>
+<p>這次利用 React 搭配少量的 Jquery 來實作，其實只需要用到原生 JavaScript 來寫即可，不然多佔了讀取時間。</p>
+<p>純粹用 DIV 的方式來實作，在物件多的時候整個就跑不太起來了，好在可以利用 React 的 State 方式來選取地圖及物件，不用全部載入。雖然如此，在平板及手機 Play 時，速度還是很慢，最後 DK 會再把這些 DIV 轉成 Canvas 的方式去 Draw ，簡單來說就是把千萬個物件畫成一張圖，這樣網頁自然就會快捷許多了。</p>
+<p>廢話不多說放上連結</p>
+<p><a href="http://dkbo.github.io/" target="_blank" rel="external">DKBO”s RPG Resume</a></p>
+<p>DK 還沒把這場景給布置好! 並非完成品</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Web RPG 履歷表、透過從以前到現在都流行的 RPG Marker(RPG 製作大師)所擁有的風格，並在網頁上呈現，實作過程中比想像中的容易，這裡不討論也不張貼程式碼，因為 DK 寫的也沒多漂亮。DK 已經把履歷已經放在 GitHub 了。如果不怕傷眼睛的話可以看看。&lt;
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="React" scheme="https://dkbo-blog.github.io/tags/React/"/>
+    
+      <category term="RPG" scheme="https://dkbo-blog.github.io/tags/RPG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>幾天沒寫寫筆記了</title>
+    <link href="https://dkbo-blog.github.io/2015/08/03/days-not-write-note/"/>
+    <id>https://dkbo-blog.github.io/2015/08/03/days-not-write-note/</id>
+    <published>2015-08-03T11:05:00.000Z</published>
+    <updated>2016-11-20T02:43:07.879Z</updated>
+    
+    <content type="html"><![CDATA[<p>這些天都在做些甚麼呢!在複習 JavaScript 在複習 Bootstrap 在複習 AnguralJs  在學習 Facebook 開源的 ReactJs  ，畢竟很多都是速成的還沒有那麼專精。</p>
+<p>試圖去理解 Flux 架構寫法，還查到 ECMAScript 好像是最近流行的 ES6 啥鬼，哪時 JavaScript 也這麼先進了! 轉啊轉還有 架構中的框架 Redux …，我想現在我該專注在原生 JavaScript 上，不然真的很混亂了，還想學 D3 說，不知道好不好學! 查了查還有 React Native …恩 利用 JavaScript 來做 IOS Android Winodwmobile 的 App ， JavaScript 已經不是只單純做網頁這麼簡單了， Ardumo ? 哇真得嚇死人了! 連自動控制都要接觸到了 ! 彷彿想起以前碰過的 modbus …等等的通訊協定..!以後前端可能也要在分支了吧!不然通訊協定也是一門學問啊!</p>
+<p>現在真的只要 JavaScript 原生程式要專精這麼簡單嗎? 被那麼多種外包裝、架構思想，說真的誰還有心思去管其他事物呢? 真心覺得~從美感好跳到會寫網頁真的比較簡單! 畢竟美感要培養很久啊!</p>
+<p>不過話說回來只要 JavaScript 熟練，相對著 HTML5 就會容易許多，Flash 這大家耳熟的名子，可能就會比較少看到了…。太多太多的思考想法充斥於腦中。</p>
+<p>想也知道根基打好學啥都快! 但越等升級是很多人會犯的毛病吧! 誰叫丙級網頁設計 ? 浪費時間學那啥 FrontPage ， 一開始就限制只能用記事本寫不就好了，我相信人們都習慣在於習慣，但習慣偏偏就是最難去改變的。我想這也是我的痛!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;這些天都在做些甚麼呢!在複習 JavaScript 在複習 Bootstrap 在複習 AnguralJs  在學習 Facebook 開源的 ReactJs  ，畢竟很多都是速成的還沒有那麼專精。&lt;/p&gt;
+&lt;p&gt;試圖去理解 Flux 架構寫法，還查到 ECMAScript
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 3D 實在好玩</title>
+    <link href="https://dkbo-blog.github.io/2015/07/25/css-3d-play/"/>
+    <id>https://dkbo-blog.github.io/2015/07/25/css-3d-play/</id>
+    <published>2015-07-25T11:05:00.000Z</published>
+    <updated>2016-11-20T02:43:07.869Z</updated>
+    
+    <content type="html"><![CDATA[<p>再弄懂了CSS 3D 屬性之後，就開始實作出 3D 物件，實作的過程中，走走路都會想到 perspective 及 translataZ 這兩個屬性，轉個彎呢就會聯想到 rotateY 這個屬性，<del>也不知道是不是走火入魔了</del>。</p>
+<p>再寫這個 Pen 之前本來只是照著旋轉木馬幻燈片的方式去做，做到後來想要把幻燈片換成有立體感的，就去找了牆壁背景，調了調去的就調成現在這個樣子了!</p>
+<p>變成這個樣子，就開始聯想到一個浮空的齒輪，原來是這樣做的啊!恩不知道往這塊 3D WEB ? 有沒有發展性質。雖然現在大概知道怎做出一些 3D 物件出來，但還不知道怎 快速的 RWD3D 及最佳化。</p>
+<p>translate 有 X 、 Y 、 Z<br>X 的部分就當作 左移、右移<br>Y 的部分就當作 上升、下降<br>Z 的部分就當作 前進、後退</p>
+<p>rotate 有 X 、 Y 、 Z<br>X 的部分就當作 繞著 X 順轉、逆轉<br>Y 的部分就當作 繞著 Y 順轉、逆轉<br>Z 的部分就當作 繞著 Z 順轉、逆轉</p>
+<p>以下就是剛剛用出的一個範例;</p>
+<iframe height="600" width="100%" scrolling="no" src="//codepen.io/dkbo/embed/MwPpKa/?height=600&theme-id=4234&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">See the Pen <a href="http://codepen.io/dkbo/pen/MwPpKa/" target="_blank" rel="external">zGmrEd</a> by dkbo (<a href="http://codepen.io/dkbo" target="_blank" rel="external">@dkbo</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.<br></iframe>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;再弄懂了CSS 3D 屬性之後，就開始實作出 3D 物件，實作的過程中，走走路都會想到 perspective 及 translataZ 這兩個屬性，轉個彎呢就會聯想到 rotateY 這個屬性，&lt;del&gt;也不知道是不是走火入魔了&lt;/del&gt;。&lt;/p&gt;
+&lt;p&gt;再寫這個 Pe
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="3D" scheme="https://dkbo-blog.github.io/tags/3D/"/>
+    
+      <category term="CSS3" scheme="https://dkbo-blog.github.io/tags/CSS3/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS3 的 3D 屬性樣式圖</title>
+    <link href="https://dkbo-blog.github.io/2015/07/24/css-3d-style/"/>
+    <id>https://dkbo-blog.github.io/2015/07/24/css-3d-style/</id>
+    <published>2015-07-24T05:43:00.000Z</published>
+    <updated>2016-11-20T02:43:07.875Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天花了一天把 CSS3 3D 屬性的使用方法及觀念給弄個大概，後悔以前沒有學好線性代數、立體公式、角度等等..找時間要翻出來在算一算了。現今比較新的瀏覽器雖然支援這些屬性，但是每種瀏覽器看的效果又有一些不同，這絕對是被客戶給否定的。更別說還有很多骨董電腦的存在了!</p>
+<p>但是未來應付以後3D 時代，這技術是必須的，首當其衝就是，數學要回去惡補了，<del>當初自以為數學天才，都沒盡力去看，現在都不會</del>。</p>
+<p>以下有個 Pen 是寫來加強腦部想像3維空間，有興趣可以看看。</p>
+<iframe height="600" width="100%" scrolling="no" src="//codepen.io/dkbo/embed/zGmrEd/?height=600&theme-id=4234&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">See the Pen <a href="http://codepen.io/dkbo/pen/zGmrEd/" target="_blank" rel="external">zGmrEd</a> by dkbo (<a href="http://codepen.io/dkbo" target="_blank" rel="external">@dkbo</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.<br></iframe>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;昨天花了一天把 CSS3 3D 屬性的使用方法及觀念給弄個大概，後悔以前沒有學好線性代數、立體公式、角度等等..找時間要翻出來在算一算了。現今比較新的瀏覽器雖然支援這些屬性，但是每種瀏覽器看的效果又有一些不同，這絕對是被客戶給否定的。更別說還有很多骨董電腦的存在了!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="3D" scheme="https://dkbo-blog.github.io/tags/3D/"/>
+    
+      <category term="CSS3" scheme="https://dkbo-blog.github.io/tags/CSS3/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最近著手於 Gulp</title>
+    <link href="https://dkbo-blog.github.io/2015/07/20/use-gulp/"/>
+    <id>https://dkbo-blog.github.io/2015/07/20/use-gulp/</id>
+    <published>2015-07-20T03:46:00.000Z</published>
+    <updated>2016-11-20T02:43:08.086Z</updated>
+    
+    <content type="html"><![CDATA[<p>在下定決心要走向 <strong>F2E</strong> 這條路之後，就連日的練習並拜讀技巧文章，到最近接觸到的 <strong>Gulp</strong>，在這數日中開發工具不斷的變更，起初用的只不過是 <strong>Xampp 搭配著 </strong><strong>Sublime Text 、 LiveReload </strong><strong>，即寫即讀的模式。</strong></p>
+<p>之後呢?用 <strong class="info_font">Dos 來 </strong><strong class="info_font">Watch</strong></p>
+<p><strong class="info_font">Sass/SCSS</strong><br>利用 @import @minix @function、@extend、Condition、Loop…等等，大幅加速開發 CSS。</p>
+<p><strong class="info_font">compass</strong><br>Sass 的 Framework 裡面包含了很多實用的功能，例如; Sprite 、 CSS Hack 、 加亮工具 、 加暗工具…等等。</p>
+<p><strong class="info_font">Susy</strong><br>網格系統及響應式設計的利器，透過設定好的參數，即可以運用函示快速開發。</p>
+<p>在之後呢? 開始使用 <strong class="info_font">Gulp</strong></p>
+<div class="default xx-p"><br><p>npm install Gulp Gulp-compass Gulp-jade …..等</p><br><p>先 require 好 模組後，開始指派 task，最後透過 Watch 監視程式的變動，創造出自動化開發環境。透過這開發環境，必定提升數倍效率。</p><br><p>目前 <em class="primary_font">DK</em> 正在慢慢熟悉並配置中，並加強編譯工具 Jade or Jade-php 、 Sass 、 CoffeeScripts</p><br></div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在下定決心要走向 &lt;strong&gt;F2E&lt;/strong&gt; 這條路之後，就連日的練習並拜讀技巧文章，到最近接觸到的 &lt;strong&gt;Gulp&lt;/strong&gt;，在這數日中開發工具不斷的變更，起初用的只不過是 &lt;strong&gt;Xampp 搭配著 &lt;/strong&gt;&lt;stron
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="Gulp" scheme="https://dkbo-blog.github.io/tags/Gulp/"/>
+    
+      <category term="Node.js" scheme="https://dkbo-blog.github.io/tags/Node-js/"/>
+    
+      <category term="Sass" scheme="https://dkbo-blog.github.io/tags/Sass/"/>
+    
+      <category term="Compass" scheme="https://dkbo-blog.github.io/tags/Compass/"/>
+    
+      <category term="Jade" scheme="https://dkbo-blog.github.io/tags/Jade/"/>
+    
+      <category term="Susy" scheme="https://dkbo-blog.github.io/tags/Susy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用Canvas 實作小畫家</title>
+    <link href="https://dkbo-blog.github.io/2015/07/19/used-canvas-do-painter/"/>
+    <id>https://dkbo-blog.github.io/2015/07/19/used-canvas-do-painter/</id>
+    <published>2015-07-19T03:12:00.000Z</published>
+    <updated>2016-11-20T02:43:08.093Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前從沒有想過會透過寫個塗鴉牆出來，完全沒有概念，但是當DK寫出來後，就恍然大悟了，原來小畫家並不難寫，只是要透過區塊、觸發事件、工具等把圖畫出來，本範例寫的功能是讓你可以用隻筆，在框框範圍內隨心所欲的畫，功能的部分DK只寫了筆頭顏色、筆頭大小、筆頭樣式、清除、存圖。其實已經有一堆網站已經有做出進階的功能了，所以本範例等有閒時間再來加加功能。</p>
+<p><a href="http://dkbo.github.io/canvas-pinter" target="_blank" rel="external">DEMO</a></p>
+<iframe height="600" width="100%" scrolling="no" src="//codepen.io/dkbo/embed/mJKZzv/?height=600&theme-id=4234&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">See the Pen <a href="http://codepen.io/dkbo/pen/mJKZzv/" target="_blank" rel="external">mJKZzv</a> by dkbo (<a href="http://codepen.io/dkbo" target="_blank" rel="external">@dkbo</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.<br></iframe>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以前從沒有想過會透過寫個塗鴉牆出來，完全沒有概念，但是當DK寫出來後，就恍然大悟了，原來小畫家並不難寫，只是要透過區塊、觸發事件、工具等把圖畫出來，本範例寫的功能是讓你可以用隻筆，在框框範圍內隨心所欲的畫，功能的部分DK只寫了筆頭顏色、筆頭大小、筆頭樣式、清除、存圖。其實已
+    
+    </summary>
+    
+      <category term="網頁設計" scheme="https://dkbo-blog.github.io/categories/web-design/"/>
+    
+    
+      <category term="Canvas" scheme="https://dkbo-blog.github.io/tags/Canvas/"/>
+    
+      <category term="HTML5" scheme="https://dkbo-blog.github.io/tags/HTML5/"/>
+    
+      <category term="JavaScript" scheme="https://dkbo-blog.github.io/tags/JavaScript/"/>
+    
+      <category term="畫布" scheme="https://dkbo-blog.github.io/tags/%E7%95%AB%E5%B8%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>網頁學習過程(二)</title>
+    <link href="https://dkbo-blog.github.io/2015/07/19/webstudy-2/"/>
+    <id>https://dkbo-blog.github.io/2015/07/19/webstudy-2/</id>
+    <published>2015-07-19T03:12:00.000Z</published>
+    <updated>2016-11-20T02:43:08.107Z</updated>
+    
+    <content type="html"><![CDATA[<p><span class="info_font">Google</span> 雖然解決了不少問題，但還是有會碰壁的時候，想當初 <em class="primary_font">DK</em> 還把 <span class="info_font">JavaScript</span> 跟 <span class="info_font">Java</span> 混為一談呢!</p>
+<p>雖然知道怎去看 <span class="info_font">Jquery</span> 的範例卻也不知道 <span class="info_font">Jquery</span> 的好處在哪!只知道比較好上手。</p>
+<p>當時在 <span class="info_font">PTT</span> 網頁設計專版的置底文，標題為是給網頁初心者一篇文章，這篇文章把網頁分為了好幾個學習規劃，有興趣者卻又不知道從何上手可以去拜讀那篇文章。</p>
+<p>在學習這條路上往往碰到一些好工具就開始興奮了!從起初的 <span class="info_font">Joomla</span> 讓 <em class="primary_font">DK</em> 大開眼界，之後的 <span class="info_font">W3C School</span> 也是，邊學語法邊試做，對 <em class="primary_font">DK</em> 來說， <span class="info_font">W3C School</span> 算是網頁啟蒙者吧，曾經有以此經驗方式教人學習網頁，但不知道是 <em class="primary_font">DK</em> 不會教，抑或是每個人學習方式不同，此人不懂得如何去利用 <span class="info_font">W3C School</span> 去學習，那個人盡然跟 <em class="primary_font">DK</em> 說，只要給每個步驟的畫面及說明文字，他就知道怎做了….，他說的不就跟網路上的一些分享文或是設定教學文一樣吧!當老師要因材施教，真的是不容易啊!這時 <em class="primary_font">DK</em> 就在想..如果教的會他，也可以當家教了吧，雖然最後並沒有教會他。</p>
+<p>在<a href="/webstudy/">網頁學習過程(一)</a> 有提到說把國外網站移植過來!那時老闆說，可以把國外的登入功能放在台灣網站上嗎?沒想到又出現來一個困難點，那時的 <em class="primary_font">DK</em> 還不懂得如何使用資料庫，但是 <em class="primary_font">DK</em> 也知道以那時的能力，那是不可能的事情，印象中當時的回覆是，只能加個連結到國外登入網站的按鈕，如果要在台灣網站加入登入功能的話，要請國外的工程師給相關資訊才可以。後來老闆就說只需放連結就好!頓時鬆了一口氣，此時的 <em class="primary_font">DK</em>，只懂得 <span class="info_font">HTML</span> 跟輕微的 <span class="info_font">CSS</span> 還有那 <span class="info_font">Jquery</span> 的幾個小 <span class="info_font">Method</span> 如 <span class="info_font">Click</span> … 恩好像沒有了!雖然鬆了一口氣，後來趕緊去拜讀了 <span class="info_font">PHP</span> 教學文。</p>
+<p><span class="info_font">PHP</span> 不像 <span class="info_font">HTML、CSS、Jquery</span> 可以在 <span class="info_font">W3c School</span> 邊看語法邊修改看結果，學的時候碰很多壁，很多也都看不懂，看不懂也沒去搞懂就一直往下看!然後就看到 Connect <span class="info_font">Mysql</span> 的相關教學文! 頓時又開始興奮了!<em class="primary_font">DK</em> 開始學著如何去，Select(查詢)、Modify(修改)、Delete(修改)、Insert Into(插入)，這些都看得懂~但是英文底子差的<em class="primary_font">DK</em>..都會忘記語法然後使用複製貼上的方式!透過這些<em class="primary_font">DK</em> 又在Google 大神的幫助下找到了很多篇關於會員登入的文章，然後把原始碼複製下來一步一步的改，忘記說這些 <span class="info_font">PHP</span> 程式碼 是透過 <span class="info_font">Xampp</span> 來架設在自己的電腦上的。當初密碼放在資料庫都是明碼，<span class="info_font">POST</span> 的資料也都直接取用沒再透過處理，安全性大幅降低。</p>
+<p>有一段時間看到了 <span class="info_font">HTML5</span> 做的股票模板，有K線圖、KD線、RSV、移動平均線等，<em class="primary_font">DK</em> 開始鑽研著這些原始碼，沒錯又在越級升等了，那時的程式碼 <em class="primary_font">DK</em> 起始壓跟著看不懂，只知道某一些變數去改動即可，然後再擷取 <span class="info_font">JSON</span> 的資料顯示出圖表來!</p>
+<p><span class="info_font">Google</span> 了一些 台灣股市開放資訊，找到了很多文章，有<span class="info_font">台灣證券所、Google、Yahoo</span>，都可以擷取想要的資訊。印象中做了一個月有吧!在一次的機緣巧合下有去朋友家，朋友跟我說可以公開出來讓人使用，如果好用就會有價值吧!有價值的話..恩。後來還在那網站加入了新增 <span class="info_font">Youtube</span> 影片的功能及透過 <span class="info_font">RSS</span> 擷取各大新聞的資訊!很有成就感呢!不過後來因為隱私權等因素已經把那網站給停掉了!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;span class=&quot;info_font&quot;&gt;Google&lt;/span&gt; 雖然解決了不少問題，但還是有會碰壁的時候，想當初 &lt;em class=&quot;primary_font&quot;&gt;DK&lt;/em&gt; 還把 &lt;span class=&quot;info_font&quot;&gt;JavaScript&lt;/sp
+    
+    </summary>
+    
+      <category term="心情札記" scheme="https://dkbo-blog.github.io/categories/notes/"/>
+    
+    
+      <category term="日記" scheme="https://dkbo-blog.github.io/tags/%E6%97%A5%E8%A8%98/"/>
+    
+      <category term="網頁" scheme="https://dkbo-blog.github.io/tags/%E7%B6%B2%E9%A0%81/"/>
+    
+      <category term="HTML" scheme="https://dkbo-blog.github.io/tags/HTML/"/>
+    
+      <category term="Wordpress" scheme="https://dkbo-blog.github.io/tags/Wordpress/"/>
+    
+      <category term="CSS" scheme="https://dkbo-blog.github.io/tags/CSS/"/>
+    
+      <category term="Mysql" scheme="https://dkbo-blog.github.io/tags/Mysql/"/>
+    
+      <category term="PHP" scheme="https://dkbo-blog.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+</feed>

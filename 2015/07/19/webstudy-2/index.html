@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <meta charset="utf-8">
+  
+  <title>DKBO休閒網  | 網頁學習過程(二)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no" />
+
+  <meta name="description" content="Google 雖然解決了不少問題，但還是有會碰壁的時候，想當初 DK 還把 JavaScript 跟 Java 混為一談呢!
+雖然知道怎去看 Jquery 的範例卻也不知道 Jquery 的好處在哪!只知道比較好上手。
+當時在 PTT 網頁設計專版的置底文，標題為是給網頁初心者一篇文章，這篇文章把網頁分為了好幾個學習規劃，有興趣者卻又不知道從何上手可以去拜讀那篇文章。
+在學習這條路上往往碰到一些好">
+<meta property="og:type" content="article">
+<meta property="og:title" content="網頁學習過程(二)">
+<meta property="og:url" content="https://dkbo-blog.github.io/2015/07/19/webstudy-2/index.html">
+<meta property="og:site_name" content="DKBO休閒網">
+<meta property="og:description" content="Google 雖然解決了不少問題，但還是有會碰壁的時候，想當初 DK 還把 JavaScript 跟 Java 混為一談呢!
+雖然知道怎去看 Jquery 的範例卻也不知道 Jquery 的好處在哪!只知道比較好上手。
+當時在 PTT 網頁設計專版的置底文，標題為是給網頁初心者一篇文章，這篇文章把網頁分為了好幾個學習規劃，有興趣者卻又不知道從何上手可以去拜讀那篇文章。
+在學習這條路上往往碰到一些好">
+<meta property="og:image" content="https://dkbo-blog.github.io/images/feature/web.jpg">
+<meta property="og:updated_time" content="2016-11-20T02:43:08.107Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="網頁學習過程(二)">
+<meta name="twitter:description" content="Google 雖然解決了不少問題，但還是有會碰壁的時候，想當初 DK 還把 JavaScript 跟 Java 混為一談呢!
+雖然知道怎去看 Jquery 的範例卻也不知道 Jquery 的好處在哪!只知道比較好上手。
+當時在 PTT 網頁設計專版的置底文，標題為是給網頁初心者一篇文章，這篇文章把網頁分為了好幾個學習規劃，有興趣者卻又不知道從何上手可以去拜讀那篇文章。
+在學習這條路上往往碰到一些好">
+<meta name="twitter:image" content="https://dkbo-blog.github.io/images/feature/web.jpg">
+
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43399470-4', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+  </head>
+  <body>
+  <div id="wrap"  class="single_body"  >
+  <nav>
+  
+    <div id="singlemenubutton" class="clearfix xx-show s-hide">
+      <a href="/">
+        <i  class="xx-p fa fa-home"></i>
+      </a>
+      <a href="https://www.facebook.com/lu.dkbo">
+        <i  class="xx-p fa fa-facebook"></i>
+      </a>
+      <a href="//codepen.io/dkbo/">
+        <i  class="xx-p fa fa-codepen"></i>
+      </a>
+        <a href="//dkbo.github.io">
+          <i class="xx-p fa fa-github"></i>
+        </a>
+        <i class="xx-p totop fa fa-angle-double-up"></i>
+    </div>
+  
+</nav>
+
+<header class="xx-hide  "></header>
+
+  
+    <div class="container" id="artical-container" style="margin-left:0;">
+  
+      <div class="row" id="single-page">
+  
+
+<aside class="col s4 xx-ng xx-np">
+  <div id="fix" class="x-p m-2p" >
+    <section class="article-author">
+    <div class="col xx12 x3 s12">
+        <div class="contact_show">
+          <img src="https://www.gravatar.com/avatar/d2cddbe46278bf25a41b9479af20cf8d?s=250" alt="">
+        </div>
+        <div class="xx-hide s-show" id="social-icon">
+            <a href="https://www.facebook.com/lu.dkbo">
+                <i id="facebook" class="xx-p fleft fa fa-facebook"></i>
+            </a>
+            <a href="//codepen.io/dkbo">
+                <i id="codepen" class="xx-p fleft fa fa-codepen"></i>
+            </a>
+            <a href="//dkbo.github.io">
+                <i id="github" class="xx-p fleft fa fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col xx12 x9 s12">
+        <p class="author-description xx-ng">
+            小小前端工程師，做出的網頁必定兼容電腦、手機、平板等裝置。會簡單的後端語言連接資料庫能做出簡易的會員系統、訂單管理系統、物流管理系統等等。正朝著網頁美感路線努力中。
+        </p>
+    </div>
+</section>
+
+  </div>
+</aside>
+
+
+    <div class="col s8 xx-np xx-ng" id="single-content">
+        <div id="single_breadcrumb" class="xx-hide s-show">
+            <ul class="breadcrumb xx-hide s-show">
+    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url" title="DKBO休閒網">
+            <span itemprop="title">DKBO休閒網</span></a>
+    </li>
+    
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span class="divider">›</span>
+            <a href="/categories/notes/" itemprop="url" title='心情札記'>
+                <span itemprop="title"><a href="/categories/notes/">心情札記</a></span>
+            </a>
+        </li>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+            <span class="divider">›</span>
+            <span itemprop="title">
+              網頁學習過程(二)
+            </span>
+        <li>
+        
+</ul>
+
+        </div>
+        <article class="col xx-12 x-p s-2p">
+            <h1 class="article-title">網頁學習過程(二)</h1>
+            <div class="article-meta">
+                <span>2015年07月19日</span><span> / </span>
+                <span><a href="/categories/notes/">心情札記</a></span><span> / </span>
+                <span>
+                  
+  <a href="/tags/日記/">日記</a>
+  
+    ,
+  
+
+  <a href="/tags/網頁/">網頁</a>
+  
+    ,
+  
+
+  <a href="/tags/HTML/">HTML</a>
+  
+    ,
+  
+
+  <a href="/tags/Wordpress/">Wordpress</a>
+  
+    ,
+  
+
+  <a href="/tags/CSS/">CSS</a>
+  
+    ,
+  
+
+  <a href="/tags/Mysql/">Mysql</a>
+  
+    ,
+  
+
+  <a href="/tags/PHP/">PHP</a>
+  
+
+
+                </span>
+            </div>
+            <p><span class="info_font">Google</span> 雖然解決了不少問題，但還是有會碰壁的時候，想當初 <em class="primary_font">DK</em> 還把 <span class="info_font">JavaScript</span> 跟 <span class="info_font">Java</span> 混為一談呢!</p>
+<p>雖然知道怎去看 <span class="info_font">Jquery</span> 的範例卻也不知道 <span class="info_font">Jquery</span> 的好處在哪!只知道比較好上手。</p>
+<p>當時在 <span class="info_font">PTT</span> 網頁設計專版的置底文，標題為是給網頁初心者一篇文章，這篇文章把網頁分為了好幾個學習規劃，有興趣者卻又不知道從何上手可以去拜讀那篇文章。</p>
+<p>在學習這條路上往往碰到一些好工具就開始興奮了!從起初的 <span class="info_font">Joomla</span> 讓 <em class="primary_font">DK</em> 大開眼界，之後的 <span class="info_font">W3C School</span> 也是，邊學語法邊試做，對 <em class="primary_font">DK</em> 來說， <span class="info_font">W3C School</span> 算是網頁啟蒙者吧，曾經有以此經驗方式教人學習網頁，但不知道是 <em class="primary_font">DK</em> 不會教，抑或是每個人學習方式不同，此人不懂得如何去利用 <span class="info_font">W3C School</span> 去學習，那個人盡然跟 <em class="primary_font">DK</em> 說，只要給每個步驟的畫面及說明文字，他就知道怎做了….，他說的不就跟網路上的一些分享文或是設定教學文一樣吧!當老師要因材施教，真的是不容易啊!這時 <em class="primary_font">DK</em> 就在想..如果教的會他，也可以當家教了吧，雖然最後並沒有教會他。</p>
+<p>在<a href="/webstudy/">網頁學習過程(一)</a> 有提到說把國外網站移植過來!那時老闆說，可以把國外的登入功能放在台灣網站上嗎?沒想到又出現來一個困難點，那時的 <em class="primary_font">DK</em> 還不懂得如何使用資料庫，但是 <em class="primary_font">DK</em> 也知道以那時的能力，那是不可能的事情，印象中當時的回覆是，只能加個連結到國外登入網站的按鈕，如果要在台灣網站加入登入功能的話，要請國外的工程師給相關資訊才可以。後來老闆就說只需放連結就好!頓時鬆了一口氣，此時的 <em class="primary_font">DK</em>，只懂得 <span class="info_font">HTML</span> 跟輕微的 <span class="info_font">CSS</span> 還有那 <span class="info_font">Jquery</span> 的幾個小 <span class="info_font">Method</span> 如 <span class="info_font">Click</span> … 恩好像沒有了!雖然鬆了一口氣，後來趕緊去拜讀了 <span class="info_font">PHP</span> 教學文。</p>
+<p><span class="info_font">PHP</span> 不像 <span class="info_font">HTML、CSS、Jquery</span> 可以在 <span class="info_font">W3c School</span> 邊看語法邊修改看結果，學的時候碰很多壁，很多也都看不懂，看不懂也沒去搞懂就一直往下看!然後就看到 Connect <span class="info_font">Mysql</span> 的相關教學文! 頓時又開始興奮了!<em class="primary_font">DK</em> 開始學著如何去，Select(查詢)、Modify(修改)、Delete(修改)、Insert Into(插入)，這些都看得懂~但是英文底子差的<em class="primary_font">DK</em>..都會忘記語法然後使用複製貼上的方式!透過這些<em class="primary_font">DK</em> 又在Google 大神的幫助下找到了很多篇關於會員登入的文章，然後把原始碼複製下來一步一步的改，忘記說這些 <span class="info_font">PHP</span> 程式碼 是透過 <span class="info_font">Xampp</span> 來架設在自己的電腦上的。當初密碼放在資料庫都是明碼，<span class="info_font">POST</span> 的資料也都直接取用沒再透過處理，安全性大幅降低。</p>
+<p>有一段時間看到了 <span class="info_font">HTML5</span> 做的股票模板，有K線圖、KD線、RSV、移動平均線等，<em class="primary_font">DK</em> 開始鑽研著這些原始碼，沒錯又在越級升等了，那時的程式碼 <em class="primary_font">DK</em> 起始壓跟著看不懂，只知道某一些變數去改動即可，然後再擷取 <span class="info_font">JSON</span> 的資料顯示出圖表來!</p>
+<p><span class="info_font">Google</span> 了一些 台灣股市開放資訊，找到了很多文章，有<span class="info_font">台灣證券所、Google、Yahoo</span>，都可以擷取想要的資訊。印象中做了一個月有吧!在一次的機緣巧合下有去朋友家，朋友跟我說可以公開出來讓人使用，如果好用就會有價值吧!有價值的話..恩。後來還在那網站加入了新增 <span class="info_font">Youtube</span> 影片的功能及透過 <span class="info_font">RSS</span> 擷取各大新聞的資訊!很有成就感呢!不過後來因為隱私權等因素已經把那網站給停掉了!</p>
+
+            <div class="clearfix"></div>
+            <div class="fb-like" data-href="https://dkbo-blog.github.io/2015/07/19/webstudy-2/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+        </article>
+        
+        <div id="comments">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES * * */
+                var disqus_shortname = 'dkbo';
+                
+                var disqus_url = 'https://dkbo-blog.github.io/2015/07/19/webstudy-2/';
+                
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script');
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+        
+    </div>
+</div>
+
+  </div>
+  <footer>
+    <div class="container">
+        <div class="row">
+            <nav class="col s6 m4">
+                <div class="title">最新文章</div>
+                
+<ul class="footlist">
+  
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/12/Css3-3D-Style-Example/" title="Css3 3D Style Example">
+                    Css3 3D Style Exam
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/02/blog-move/" title="部落格搬家啦~使用的是Hexo">
+                    部落格搬家啦~使用
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2016/02/06/next-way/" title="邁入人生下個里程碑~">
+                    邁入人生下個里程碑
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2016/01/20/qk-a-month/" title="車禍後~休養了一個月~">
+                    車禍後~休養了一個
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/10/13/poe-calc/" title="Path of exile(流亡黯道) 傷害計算機">
+                    Path of exile(流亡
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/09/23/learn-math/" title="數學還是要學好比較好~">
+                    數學還是要學好比較
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/09/11/learn-more-not-fast-absorb/" title="學的多，但吸收不太快。">
+                    學的多，但吸收不太
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/02/do-lite-online-game/" title="陽春 Online Game 實作">
+                    陽春 Online Game 
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/01/far-way/" title="後面還有很多路要走~">
+                    後面還有很多路要走
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/08/15/rpg-maker-map-editor/" title="RPG Maker 地圖編輯器">
+                    RPG Maker 地圖編輯
+                </a>
+        </li>
+    
+</ul>
+
+
+            </nav>
+            <nav class="col s6 m4">
+                <div class="title">最新影片</div>
+                
+<ul class="footlist">
+  
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2016/05/09/lance-lu-13/" title="可樂果吃檸檬⊙▽⊙">
+                    可樂果吃檸檬⊙▽⊙
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/07/06/lance-lu-12/" title="這小子開始愛站了">
+                    這小子開始愛站了
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/24/lance-lu-11/" title="睡著的可樂果">
+                    睡著的可樂果
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/20/lance-lu-10/" title="小時候就練臂力了">
+                    小時候就練臂力了
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/17/lance-lu-5/" title="這小子蠻怕癢的麻">
+                    這小子蠻怕癢的麻
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/notes/">[心情札記]</a>
+                <a href="/2015/06/16/married-video/" title="結婚開場影片">
+                    結婚開場影片
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/14/lance-lu-4/" title="可樂果-7m9d-會爬啦">
+                    可樂果-7m9d-會爬啦
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/06/lance-lu-2/" title="可樂果興奮尖叫大笑">
+                    可樂果興奮尖叫大笑
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/06/05/lance-lu/" title="可樂果7m囉">
+                    可樂果7m囉
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/coke/">[可樂果]</a>
+                <a href="/2015/05/31/lance-lu-0/" title="學爬的前奏？">
+                    學爬的前奏？
+                </a>
+        </li>
+    
+</ul>
+
+
+            </nav>
+            <nav class="col s6 m4">
+                <div class="title">網頁設計</div>
+                
+<ul class="footlist">
+  
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/12/Css3-3D-Style-Example/" title="Css3 3D Style Example">
+                    Css3 3D Style Exam
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2016/05/02/blog-move/" title="部落格搬家啦~使用的是Hexo">
+                    部落格搬家啦~使用
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/02/do-lite-online-game/" title="陽春 Online Game 實作">
+                    陽春 Online Game 
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/09/01/far-way/" title="後面還有很多路要走~">
+                    後面還有很多路要走
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/08/15/rpg-maker-map-editor/" title="RPG Maker 地圖編輯器">
+                    RPG Maker 地圖編輯
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/08/12/web-rpg-resume/" title="Web RPG Resume (實作線上 RPG 履歷)">
+                    Web RPG Resume (實
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/25/css-3d-play/" title="CSS 3D 實在好玩">
+                    CSS 3D 實在好玩
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/24/css-3d-style/" title="CSS3 的 3D 屬性樣式圖">
+                    CSS3 的 3D 屬性樣
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/20/use-gulp/" title="最近著手於 Gulp">
+                    最近著手於 Gulp
+                </a>
+        </li>
+    
+        <li>
+            <a href="/categories/web-design/">[網頁設計]</a>
+                <a href="/2015/07/19/used-canvas-do-painter/" title="利用Canvas 實作小畫家">
+                    利用Canvas 實作小
+                </a>
+        </li>
+    
+</ul>
+
+
+            </nav>
+        </div>
+</footer>
+<div id="copyright">
+    <div class="container">
+        <div class="col x12 s6 xx-center s-left">© 2015 DKBO. All Rights Reserved</div>
+    </div>
+</div>
+
+
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  
+  
+    <script src="/js/signage.js"></script>
+  
+  <script src="/js/index.js"></script>
+</body>
+</html>
