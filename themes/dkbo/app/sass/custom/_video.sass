@@ -4,8 +4,21 @@
   line-height: 0
   &:hover img
     opacity: .8
+  &>div
+    position: relative
+    border-radius: 10px
+    overflow: hidden
+    box-shadow: 2px 0px 3px #848484
+    &:before
+      display: block
+      content: ""
+      padding-top: 75%
   img
+    position: absolute
+    top: 0
     width: 100%
+    height: 100%
+    
   .imgbox
     z-index: 9
     position: absolute
@@ -28,9 +41,6 @@
       left: 50%
       margin-left: -0.75em
       margin-top: -0.75em
-      .videohotview
-        line-height: 1.2
-      i
-        font-size: 1.5em
+
   &:hover .imgbox
     top: 0
